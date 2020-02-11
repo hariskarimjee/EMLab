@@ -2,13 +2,11 @@
 [Frequency]   =  0
 [Precision]   =  1e-008
 [MinAngle]    =  30
-[DoSmartMesh] =  1
 [Depth]       =  20
 [LengthUnits] =  millimeters
 [ProblemType] =  planar
 [Coordinates] =  cartesian
 [ACSolver]    =  0
-[PrevType]    =  0
 [PrevSoln]    =  ""
 [Comment]     =  "Add comments here."
 [PointProps]   = 0
@@ -26,8 +24,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc1"
@@ -42,8 +38,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc2"
@@ -58,8 +52,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc3"
@@ -74,8 +66,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc4"
@@ -90,8 +80,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc5"
@@ -106,8 +94,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -122,8 +108,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -138,8 +122,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
 [BlockProps]  = 18
   <BeginBlock>
@@ -729,7 +711,39 @@
 115.09999999999999	-20	0	2
 115.09999999999999	20	0	2
 25.100000000000001	20	0	2
-[NumSegments] = 0
+[NumSegments] = 32
+12	13	-1	0	0	0
+13	14	-1	0	0	0
+14	15	-1	0	0	0
+15	12	-1	0	0	0
+16	17	-1	0	0	0
+17	18	-1	0	0	0
+18	19	-1	0	0	0
+19	16	-1	0	0	0
+20	21	-1	0	0	0
+21	22	-1	0	0	0
+22	23	-1	0	0	0
+23	20	-1	0	0	0
+24	25	-1	0	0	0
+25	26	-1	0	0	0
+26	27	-1	0	0	0
+27	24	-1	0	0	0
+0	1	-1	0	0	0
+1	2	-1	0	0	0
+2	3	-1	0	0	0
+3	4	-1	0	0	0
+4	5	-1	0	0	0
+5	6	-1	0	0	0
+6	7	-1	0	0	0
+7	8	-1	0	0	0
+8	9	-1	0	0	0
+9	10	-1	0	0	0
+10	11	-1	0	0	0
+11	0	-1	0	0	0
+28	29	-1	0	0	0
+29	30	-1	0	0	0
+30	31	-1	0	0	0
+31	28	-1	0	0	0
 [NumArcSegments] = 0
 [NumHoles] = 0
 [NumBlockLabels] = 0

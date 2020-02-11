@@ -25,7 +25,10 @@ mi_addnode(moverp(:,1), moverp(:,2))
 
 for i = 1:length(components)
     modifyNodes(components{i});
+    addLines(components{i});
 end
+
+
 
 mi_saveas('actuator.fem');
 
@@ -37,3 +40,12 @@ function modifyNodes(component)
     end
 end
 
+function addLines(component)
+    for j = 1:size(component,1)
+        if j<size(component,1)
+            mi_addsegment(component(j,1), component(j,2), component(j+1,1), component(j+1,2));
+        else
+            mi_addsegment(component(j,1), component(j,2), component(1,1), component(1,2));
+        end
+    end
+end
