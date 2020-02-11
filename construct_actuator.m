@@ -4,7 +4,7 @@ opendocument('femm_template.fem');
 mi_saveas('actuator.fem');
 
 
-components = {coil1p coil2p coil3p coil4p corep moverp};
+components = {corep moverp coil1p coil2p coil3p coil4p};
 
 load('coil1p.mat');
 load('coil2p.mat');
@@ -27,6 +27,30 @@ for i = 1:length(components)
     modifyNodes(components{i});
     addLines(components{i});
 end
+
+blockCoords = [(min(corep(:,1)) + 3) mean(corep(:,2));
+                mean(moverp(:,1)) mean(moverp(:,2));
+                mean(coil1p(:,1)) mean(coil1p(:,2));
+                mean(coil2p(:,1)) mean(coil2p(:,2));
+                mean(coil3p(:,1)) mean(coil3p(:,2));
+                mean(coil4p(:,1)) mean(coil4p(:,2));
+                -25 0];
+blockProps = {'corelinear' 1 0 '<None>' 0 1 0;
+              'corelinear' 1 0 '<None>' 0 2 0;
+              'copper' 1 0 'winding_1' 0 3 0;
+              'copper' 1 0 'winding_1' 0 4 0;
+              'copper' 1 0 'winding_2' 0 5 0;
+              'copper' 1 0 'winding_2' 0 6 0
+              'air' 1 0 '<None>' 0 7 0};
+            
+            
+for i = 1:max(size(blockCoords))
+    mi_addblocklabel(blockCoords(i,1), blockCoords(i,2));
+    mi_selectlabel(blockCoords(i,1), blockCoords(i,2));
+    mi_setblockprop(blockProps(i,1), blockProps(i,2), blockProps(i,3), blockProps(i,4), blockProps(i,5), blockProps(i,6), blockProps(i,7));
+    mi_clearselected
+end
+
 
 mi_makeABC();
 
