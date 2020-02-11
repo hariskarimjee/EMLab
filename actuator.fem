@@ -10,7 +10,7 @@
 [PrevSoln]    =  ""
 [Comment]     =  "Add comments here."
 [PointProps]   = 0
-[BdryProps]   = 8
+[BdryProps]   = 9
   <BeginBdry>
     <BdryName> = "A=0"
     <BdryType> = 0
@@ -123,7 +123,21 @@
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
   <EndBdry>
-[BlockProps]  = 18
+  <BeginBdry>
+    <BdryName> = "A=0"
+    <BdryType> = 0
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+  <EndBdry>
+[BlockProps]  = 25
   <BeginBlock>
     <BlockName> = "core_nonlinear"
     <Mu_x> = 1000000
@@ -665,6 +679,139 @@
     <WireD> = 0
     <BHPoints> = 0
   <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u1"
+    <Mu_x> = 2.6498996896116669
+    <Mu_y> = 2.6498996896116669
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u2"
+    <Mu_x> = 0.12953316809300527
+    <Mu_y> = 0.12953316809300527
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u3"
+    <Mu_x> = 14.398967120915913
+    <Mu_y> = 14.398967120915913
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u4"
+    <Mu_x> = 0.042882574356338271
+    <Mu_y> = 0.042882574356338271
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u5"
+    <Mu_x> = 37.197476986533054
+    <Mu_y> = 37.197476986533054
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u6"
+    <Mu_x> = 0.015664246064106369
+    <Mu_y> = 0.015664246064106369
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "u7"
+    <Mu_x> = 142.03015659052124
+    <Mu_y> = 142.03015659052124
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
 [CircuitProps]  = 2
   <BeginCircuit>
     <CircuitName> = "winding_1"
@@ -678,7 +825,7 @@
     <TotalAmps_im> = 0
     <CircuitType> = 1
   <EndCircuit>
-[NumPoints] = 32
+[NumPoints] = 48
 70	20.5	0	1
 90	20.5	0	1
 90	57.5	0	1
@@ -711,6 +858,22 @@
 115.09999999999999	-20	0	2
 115.09999999999999	20	0	2
 25.100000000000001	20	0	2
+57.549999999999997	137.32532768939603	0	0
+57.549999999999997	-137.32532768939603	0	0
+57.549999999999997	-139.28711808495882	0	0
+57.549999999999997	139.28711808495882	0	0
+57.549999999999997	-141.24890848052161	0	0
+57.549999999999997	141.24890848052161	0	0
+57.549999999999997	-143.21069887608445	0	0
+57.549999999999997	143.21069887608445	0	0
+57.549999999999997	-145.17248927164724	0	0
+57.549999999999997	145.17248927164724	0	0
+57.549999999999997	-147.13427966721002	0	0
+57.549999999999997	147.13427966721002	0	0
+57.549999999999997	-149.09607006277281	0	0
+57.549999999999997	149.09607006277281	0	0
+57.549999999999997	-151.05786045833565	0	0
+57.549999999999997	151.05786045833565	0	0
 [NumSegments] = 32
 12	13	-1	0	0	3
 13	14	-1	0	0	3
@@ -744,6 +907,29 @@
 29	30	-1	0	0	2
 30	31	-1	0	0	2
 31	28	-1	0	0	2
-[NumArcSegments] = 0
+[NumArcSegments] = 16
+32	33	180	1	0	0	0
+33	32	180	1	0	0	0
+34	35	180	1	0	0	0
+35	34	180	1	0	0	0
+36	37	180	1	0	0	0
+37	36	180	1	0	0	0
+38	39	180	1	0	0	0
+39	38	180	1	0	0	0
+40	41	180	1	0	0	0
+41	40	180	1	0	0	0
+42	43	180	1	0	0	0
+43	42	180	1	0	0	0
+44	45	180	1	0	0	0
+45	44	180	1	0	0	0
+46	47	180	1	9	0	0
+47	46	180	1	9	0	0
 [NumHoles] = 0
-[NumBlockLabels] = 0
+[NumBlockLabels] = 7
+193.19870759591197	26.982205559893853	19	-1	0	0	0	1	0
+187.14074653794501	53.678244774071032	20	-1	0	0	0	1	0
+175.80975972226577	79.018645171887101	21	-1	0	0	0	1	0
+159.50885395972853	101.95885395972853	22	-1	0	0	0	1	0
+138.74846986628398	121.52209792150066	23	-1	0	0	0	1	0
+114.2312235026904	136.84057851209576	24	-1	0	0	0	1	0
+86.828563479884792	147.1932784551386	25	-1	0	0	0	1	0

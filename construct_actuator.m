@@ -28,7 +28,7 @@ for i = 1:length(components)
     addLines(components{i});
 end
 
-
+mi_makeABC();
 
 mi_saveas('actuator.fem');
 
