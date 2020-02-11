@@ -1,9 +1,9 @@
 addpath(genpath('C:\femm42'));
+openfemm()
 opendocument('femm_template.fem');
-mi_saveas('acutator.fem');
+mi_saveas('actuator.fem');
 
-components = [coil1p, coil2p, coil3p, coil4p, corep moverp]
-
+components = {coil1p coil2p coil3p coil4p corep moverp};
 
 mi_addnode(corep(:,1), corep(:,2))
 mi_addnode(coil1p(:,1),coil1p(:,2))
@@ -15,7 +15,7 @@ mi_addnode(moverp(:,1), moverp(:,2))
 
 
 for i = 1:length(components)
-    modifyNodes(components(i));
+    modifyNodes(components{i});
 end
 
 function modifyNodes(component)
@@ -24,6 +24,7 @@ function modifyNodes(component)
         mi_setnodeprop('<None>', component(j,3));
     end
 end
+
 
 
         
