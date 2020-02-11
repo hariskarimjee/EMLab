@@ -1,6 +1,4 @@
-openfemm();
-opendocument('femm_template.FEM');
+addpath(genpath('C:\femm42'));
+opendocument('actuator.fem');
 
-
-
-mi_saveas('actuator.fem');
+open('corep.mat');
