@@ -13,6 +13,6 @@ mi_addnode(moverp(:,1), moverp(:,2))
 components := [coil1p coil2p coil3p coil4p corep moverp];
 
 for components:
-        mi_selectnode(components(:,1))
-        
+    for components(:,1):
+        mi_selectnode(components(,1)
     
