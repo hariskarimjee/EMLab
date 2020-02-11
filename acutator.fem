@@ -2,13 +2,11 @@
 [Frequency]   =  0
 [Precision]   =  1e-008
 [MinAngle]    =  30
-[DoSmartMesh] =  1
 [Depth]       =  20
 [LengthUnits] =  millimeters
 [ProblemType] =  planar
 [Coordinates] =  cartesian
 [ACSolver]    =  0
-[PrevType]    =  0
 [PrevSoln]    =  ""
 [Comment]     =  "Add comments here."
 [PointProps]   = 0
@@ -26,8 +24,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc1"
@@ -42,8 +38,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc2"
@@ -58,8 +52,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc3"
@@ -74,8 +66,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc4"
@@ -90,8 +80,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc5"
@@ -106,8 +94,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -122,8 +108,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -138,8 +122,6 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
-    <innerangle> = 0
-    <outerangle> = 0
   <EndBdry>
 [BlockProps]  = 18
   <BeginBlock>
