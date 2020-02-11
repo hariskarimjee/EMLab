@@ -44,14 +44,11 @@ function addLines(component)
     for j = 1:size(component,1)
         if j<size(component,1)
             mi_addsegment(component(j,1), component(j,2), component(j+1,1), component(j+1,2));
-            mi_selectsegment(midpoint([component(j,1) component(j,2) component(j+1,1) component(j+1,2)]));
-            mi_setsegmentprop('<None>', 0, 1, 0, component(j,3));
-            mi_clearselected
+            mi_selectsegment(midpoint([component(j,1) component(j,2) component(j+1,1) component(j+1,2)]))
+            mi_setsegmentprop('<None>', 
         else
             mi_addsegment(component(j,1), component(j,2), component(1,1), component(1,2));
-            mi_selectsegment(midpoint([component(j,1) component(j,2) component(1,1) component(1,2)]));
-            mi_setsegmentprop('<None>', 0, 1, 0, component(j,3));
-            mi_clearselected
+            mi_selectsegment(midpoint([component(j,1) component(j,2) component(1,1) component(1,2)]))
         end
     end
 end
