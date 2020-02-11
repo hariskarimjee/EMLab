@@ -13,11 +13,17 @@ mi_addnode(moverp(:,1), moverp(:,2))
 components := [coil1p coil2p coil3p coil4p corep moverp];
 
 for i = 1:length(components)
-    for j = 1:size(components(i),1)
-        mi_selectnode(components(i)(j,1), components(i)(j,2));
-        mi_setnodeprop('<None>', components(i)(j,3));
+    modifyNodes(components(i));
+end
+
+function modifyNodes(component)
+    for j = 1:size(component,1)
+        mi_selectnode(component(j,1), component(j,2));
+        mi_setnodeprop('<None>', component(j,3));
     end
 end
+
+
         
         
     
