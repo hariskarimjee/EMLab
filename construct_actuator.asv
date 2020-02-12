@@ -12,7 +12,7 @@ load('moverp.mat');
 
 components = {corep moverp coil1p coil2p coil3p coil4p};
 
-mi_probdef(0, 'millimeters', 'planar', 1e-008, 20, 30, 0)
+mi_probdef(0, 'millimeters', 'planar', 1e-008, 20, 30, 1)
 
 
 mi_addnode(corep(:,1), corep(:,2))
@@ -55,9 +55,7 @@ end
 
 
 mi_makeABC();
-mi_createmesh();
-mi_analyse();
-mi_loadsolution();
+
 mi_saveas('actuator.fem');
 
 function modifyNodes(component)
