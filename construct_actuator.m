@@ -49,12 +49,12 @@ for i = 1:max(size(blockCoords))
     mi_addblocklabel(blockCoords(i,1), blockCoords(i,2));
     mi_selectlabel(blockCoords(i,1), blockCoords(i,2));
     mi_setblockprop(blockProps{i,1}, blockProps{i,2}, blockProps{i,3}, blockProps{i,4}, blockProps{i,5}, blockProps{i,6}, blockProps{i,7});
-    %mi_setblockprop('copper', 1, 0, 'winding_2', '0', 1, 0);
     mi_clearselected
 end
 
 
 mi_makeABC();
+smartmesh(1);
 mi_createmesh();
 mi_analyse();
 mi_loadsolution();
@@ -72,11 +72,19 @@ function addLines(component)
     for j = 1:size(component,1)
         if j<size(component,1)
             mi_addsegment(component(j,1), component(j,2), component(j+1,1), component(j+1,2));
+            if j == 10 && component(j,3) == 1
+                mi_selectsegment(midpoint([component(j,1) component(j,2) component(j+1,1) component(j+1,2)]));
+                mi_setsegmentprop('<None>', 0.5, 0, 0, component(j,3));
+            end
             mi_selectsegment(midpoint([component(j,1) component(j,2) component(j+1,1) component(j+1,2)]));
             mi_setsegmentprop('<None>', 0, 1, 0, component(j,3));
             mi_clearselected
         else
             mi_addsegment(component(j,1), component(j,2), component(1,1), component(1,2));
+            if component(j,3) == 2
+                mi_selectsegment(midpoint([component(j,1) component(j,2) component(1,1) component(1,2)]));
+                mi_setsegmentprop('<None>', 0.5, 0, 0, component(j,3));
+            end
             mi_selectsegment(midpoint([component(j,1) component(j,2) component(1,1) component(1,2)]));
             mi_setsegmentprop('<None>', 0, 1, 0, component(j,3));
             mi_clearselected
