@@ -1,0 +1,8 @@
+winding volume = 81153.364 mm^3
+
+winding area = 49*13.2
+
+winding length = 125.47mm
+
+Rwreal = 0.0557
+Rwfemm = 0.0107

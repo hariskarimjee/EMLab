@@ -10,10 +10,10 @@ load('coil4p.mat');
 load('corep.mat');
 load('moverp.mat');
 
+armaturePos = 0;
 components = {corep moverp coil1p coil2p coil3p coil4p};
 
 mi_probdef(0, 'millimeters', 'planar', 1e-008, 20, 30, 0)
-
 
 mi_addnode(corep(:,1), corep(:,2))
 mi_addnode(coil1p(:,1),coil1p(:,2))
@@ -52,13 +52,54 @@ for i = 1:max(size(blockCoords))
     mi_clearselected
 end
 
-
 mi_makeABC();
 smartmesh(1);
+mi_setcurrent('winding_1', 10);
+mi_setcurrent('winding_2', 10);
+
+
+
+
+% for i = 0:-0.1:-4.9
+%     moveArmature(-0.1);
+%     armaturePos = i;
+%     mi_createmesh();
+%     mi_analyse();
+% end
+
 mi_createmesh();
 mi_analyse();
 mi_loadsolution();
+
+CP = mo_getcircuitproperties('winding_1');
+mo_groupselectblock(3)
+A = mo_blockintegral(5);
+V = mo_blockintegral(10);
+mo_clearblock()
+l = V/A;
+sigma = 58e6;
+kpf = 0.6;
+l_real = 125.47e-3;
+Rw = 100*l_real/(sigma*((kpf*A)/100));
+Rfem = CP(2)/CP(1);
+
+current = 0:0.1:10;
+power_diss_real = current.^2 * Rw;
+power_diss_femm = current.^2 * Rfem;
+
+g = 5+armaturePos;
+Rtot = 3670510 + 6250*(70 + 999*g)/pi
+Rtotfringe = 3578030 + 437500/pi - 6250*g/pi + 2500*g/((((1/50) + 2*g)^2) *pi)
+
+
+
 mi_saveas('actuator.fem');
+
+function moveArmature(dx)
+    mi_selectgroup(2)
+    mi_movetranslate(dx,0)
+    mi_clearselected()
+end
 
 function modifyNodes(component)
     for j = 1:size(component,1)
