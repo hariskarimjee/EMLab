@@ -1,0 +1,7 @@
+load('inductances.mat');
+hold on
+plot(inductances(:,1), inductances(:,1), 'x');
+plot(inductances(:,1), inductances(:,1), 'x');
+plot(inductances(:,1), inductances(:,1), 'x');
+plot(inductances(:,1), inductances(:,1), 'x');
+hold off

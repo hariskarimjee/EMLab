@@ -58,42 +58,70 @@ mi_setcurrent('winding_1', 10);
 mi_setcurrent('winding_2', 10);
 
 
+% CP = mo_getcircuitproperties('winding_1');
+% mo_groupselectblock(3)
+% A = mo_blockintegral(5);
+% V = mo_blockintegral(10);
+% mo_clearblock()
+% l = V/A;
+% sigma = 58e6;
+% kpf = 0.6;
+% l_real = 125.47e-3;
+% Rw = 100*l_real/(sigma*((kpf*A)/100));
+% Rfem = CP(2)/CP(1);
+% current = 0:0.1:10;
+% power_diss_real = current.^2 * Rw;
+% power_diss_femm = current.^2 * Rfem;
+inductances = zeros(50, 5);
+for i = 0:49
+    moveArmature(-0.1);
+    armaturePos = -0.1*i;
+    mi_createmesh();
+    inductances(i + 1,:) = calculateInductance(armaturePos,blockProps, blockCoords);
+end
 
+% mi_createmesh();
+% mi_analyze();
+% mi_loadsolution();
 
-% for i = 0:-0.1:-4.9
-%     moveArmature(-0.1);
-%     armaturePos = i;
-%     mi_createmesh();
-%     mi_analyse();
-% end
-
-mi_createmesh();
-mi_analyse();
-mi_loadsolution();
-
-CP = mo_getcircuitproperties('winding_1');
-mo_groupselectblock(3)
-A = mo_blockintegral(5);
-V = mo_blockintegral(10);
-mo_clearblock()
-l = V/A;
-sigma = 58e6;
-kpf = 0.6;
-l_real = 125.47e-3;
-Rw = 100*l_real/(sigma*((kpf*A)/100));
-Rfem = CP(2)/CP(1);
-
-current = 0:0.1:10;
-power_diss_real = current.^2 * Rw;
-power_diss_femm = current.^2 * Rfem;
-
-g = 5+armaturePos;
-Rtot = 3670510 + 6250*(70 + 999*g)/pi
-Rtotfringe = 3578030 + 437500/pi - 6250*g/pi + 2500*g/((((1/50) + 2*g)^2) *pi)
-
-
+hold on
+plot(inductances(:,1), inductances(:,2), 'x');
+plot(inductances(:,1), inductances(:,3), 'x');
+plot(inductances(:,1), inductances(:,4), 'x');
+plot(inductances(:,1), inductances(:,5), 'x');
+hold off
 
 mi_saveas('actuator.fem');
+
+function inductances = calculateInductance(armaturePos, blockProps, blockCoords)
+    g = 5+armaturePos;
+    Rcore = (134.5e-3)/(4e-7 * pi * 1000 * 400e-6);
+    Rair = (0.5e-3)/(4e-7 * pi * 400e-6);
+    Rarmature = ((70 - g)*10^-3)/(4e-7 * pi * 1000 * 400e-6);
+    Rairvariable = (g*10^-3)/(4e-7 * pi * 400e-6);
+    Rtot = Rcore + Rair + Rarmature + Rairvariable;
+    Rairfringe = (0.5e-3)/(4e-7 * pi * (20e-3 + g*10^-3)^2);
+    Rairvariablefringe = (g*10^-3)/(4e-7 * pi * (20e-3 + g*10^-3)^2);
+    Rtotfringe = Rcore + Rairfringe + Rarmature + Rairvariablefringe;
+    Lanalytical = 100^2/Rtot;
+    Lanalyticalfringe = 100^2/Rtotfringe;
+    mi_saveas('linear.fem');
+    mi_analyze();
+    mi_loadsolution();
+    CP = mo_getcircuitproperties('winding_1');
+    Lnumericallinear = CP(3)/CP(1);
+    for i = 1:2
+        mi_selectlabel(blockCoords(i,1), blockCoords(i,2));
+        mi_setblockprop('core_nonlinear', blockProps{i,2}, blockProps{i,3}, blockProps{i,4}, blockProps{i,5}, blockProps{i,6}, blockProps{i,7});
+        mi_clearselected
+    end
+    mi_saveas('nonlinear.fem');
+    mi_analyze();
+    mi_loadsolution();
+    CP = mo_getcircuitproperties('winding_1');
+    Lnumericalnonlinear = CP(3)/CP(1);
+    inductances = [armaturePos Lanalytical Lanalyticalfringe Lnumericallinear Lnumericalnonlinear];
+end
 
 function moveArmature(dx)
     mi_selectgroup(2)
