@@ -72,17 +72,38 @@ mi_setcurrent('winding_2', 10);
 % current = 0:0.1:10;
 % power_diss_real = current.^2 * Rw;
 % power_diss_femm = current.^2 * Rfem;
-inductances = zeros(50, 5);
-for i = 0:49
-    moveArmature(-0.1);
-    armaturePos = -0.1*i;
+linearInductances = zeros(50, 4);
+for i = 0:10:40
+    mi_purgemesh();
     mi_createmesh();
-    inductances(i + 1,:) = calculateInductance(armaturePos,blockProps, blockCoords);
+    linearInductances(i + 1,:) = getLinearInductances(armaturePos);
+    moveArmature(-1);
+    armaturePos = -0.1*i - 1;
 end
+
+moveArmature(-armaturePos)
+armaturePos = 0;
+for i = 1:2
+    mi_selectlabel(blockCoords(i,1), blockCoords(i,2));
+    mi_setblockprop('core_nonlinear', blockProps{i,2}, blockProps{i,3}, blockProps{i,4}, blockProps{i,5}, blockProps{i,6}, blockProps{i,7});
+    mi_clearselected
+end
+
+nonlinearInductance = zeros(50,1);
+
+for i = 0:10:40
+    mi_purgemesh();
+    mi_createmesh();
+    nonlinearInductance(i+1) = nonlinearInductances();
+    moveArmature(-1);
+    armaturePos = -0.1*i;
+end    
 
 % mi_createmesh();
 % mi_analyze();
 % mi_loadsolution();
+
+inductances = [linearInductances(:,1) linearInductances(:,2) linearInductances(:,3) linearInductances(:,4) nonlinearInductance(:,1)];
 
 hold on
 plot(inductances(:,1), inductances(:,2), 'x');
@@ -93,7 +114,7 @@ hold off
 
 mi_saveas('actuator.fem');
 
-function inductances = calculateInductance(armaturePos, blockProps, blockCoords)
+function linearInductances = getLinearInductances(armaturePos)
     g = 5+armaturePos;
     Rcore = (134.5e-3)/(4e-7 * pi * 1000 * 400e-6);
     Rair = (0.5e-3)/(4e-7 * pi * 400e-6);
@@ -110,17 +131,17 @@ function inductances = calculateInductance(armaturePos, blockProps, blockCoords)
     mi_loadsolution();
     CP = mo_getcircuitproperties('winding_1');
     Lnumericallinear = CP(3)/CP(1);
-    for i = 1:2
-        mi_selectlabel(blockCoords(i,1), blockCoords(i,2));
-        mi_setblockprop('core_nonlinear', blockProps{i,2}, blockProps{i,3}, blockProps{i,4}, blockProps{i,5}, blockProps{i,6}, blockProps{i,7});
-        mi_clearselected
-    end
+    linearInductances = [armaturePos Lanalytical Lanalyticalfringe Lnumericallinear];
+end
+
+function Lnumericalnonlinear = nonlinearInductances()
+    
     mi_saveas('nonlinear.fem');
     mi_analyze();
     mi_loadsolution();
     CP = mo_getcircuitproperties('winding_1');
     Lnumericalnonlinear = CP(3)/CP(1);
-    inductances = [armaturePos Lanalytical Lanalyticalfringe Lnumericallinear Lnumericalnonlinear];
+    
 end
 
 function moveArmature(dx)
