@@ -1,7 +1,13 @@
-load('inductances.mat');
+load('psi.mat');
+
+psitemp = zeros(1,10)
 hold on
-plot(inductances(:,1), inductances(:,2), 'x');
-plot(inductances(:,1), inductances(:,3), 'x');
-plot(inductances(:,1), inductances(:,4), 'x');
-plot(inductances(:,1), inductances(:,5), 'x');
+for i = 1:6
+    for j = 1:10
+      psitemp(j) = psi(i,2,j);
+       
+    end
+    plot(1:1:10, psitemp)
+    
+end
 hold off
