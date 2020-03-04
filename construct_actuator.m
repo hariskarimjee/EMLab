@@ -56,7 +56,7 @@ smartmesh(1);
 mi_setcurrent('winding_1', 0);
 mi_setcurrent('winding_2', 0);
 
-numOfSteps = 6;
+numOfSteps = 10;
 
 
 

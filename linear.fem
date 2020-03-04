@@ -2,11 +2,13 @@
 [Frequency]   =  0
 [Precision]   =  1e-008
 [MinAngle]    =  30
+[DoSmartMesh] =  1
 [Depth]       =  20
 [LengthUnits] =  millimeters
 [ProblemType] =  planar
 [Coordinates] =  cartesian
 [ACSolver]    =  0
+[PrevType]    =  0
 [PrevSoln]    =  ""
 [Comment]     =  "Add comments here."
 [PointProps]   = 0
@@ -24,6 +26,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc1"
@@ -38,6 +42,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc2"
@@ -52,6 +58,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc3"
@@ -66,6 +74,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc4"
@@ -80,6 +90,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "apbc5"
@@ -94,6 +106,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -108,6 +122,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -122,6 +138,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
   <BeginBdry>
     <BdryName> = "A=0"
@@ -136,6 +154,8 @@
     <c1i> = 0
     <Mu_ssd> = 0
     <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
   <EndBdry>
 [BlockProps]  = 25
   <BeginBlock>
@@ -815,13 +835,13 @@
 [CircuitProps]  = 2
   <BeginCircuit>
     <CircuitName> = "winding_1"
-    <TotalAmps_re> = 2
+    <TotalAmps_re> = 10
     <TotalAmps_im> = 0
     <CircuitType> = 1
   <EndCircuit>
   <BeginCircuit>
     <CircuitName> = "winding_2"
-    <TotalAmps_re> = 2
+    <TotalAmps_re> = 10
     <TotalAmps_im> = 0
     <CircuitType> = 1
   <EndCircuit>
@@ -855,8 +875,8 @@
 69.5	58	0	6
 20.5	58	0	6
 25.100000000000001	-20	0	2
-115.09999999999995	-20	0	2
-115.09999999999995	20	0	2
+115.09999999999891	-20	0	2
+115.09999999999891	20	0	2
 25.100000000000001	20	0	2
 45.049999999999997	149.82321457304272	0	0
 45.049999999999997	-149.82321457304272	0	0
@@ -908,26 +928,26 @@
 26	27	-1	0	0	6
 27	24	-1	0	0	6
 [NumArcSegments] = 16
-32	33	180	1	0	0	0
-33	32	180	1	0	0	0
-34	35	180	1	0	0	0
-35	34	180	1	0	0	0
-36	37	180	1	0	0	0
-37	36	180	1	0	0	0
-38	39	180	1	0	0	0
-39	38	180	1	0	0	0
-40	41	180	1	0	0	0
-41	40	180	1	0	0	0
-42	43	180	1	0	0	0
-43	42	180	1	0	0	0
-44	45	180	1	0	0	0
-45	44	180	1	0	0	0
-46	47	180	1	9	0	0
-47	46	180	1	9	0	0
+32	33	180	1	0	0	0	1
+33	32	180	1	0	0	0	1
+34	35	180	1	0	0	0	1
+35	34	180	1	0	0	0	1
+36	37	180	1	0	0	0	1
+37	36	180	1	0	0	0	1
+38	39	180	1	0	0	0	1
+39	38	180	1	0	0	0	1
+40	41	180	1	0	0	0	1
+41	40	180	1	0	0	0	1
+42	43	180	1	0	0	0	1
+43	42	180	1	0	0	0	1
+44	45	180	1	0	0	0	1
+45	44	180	1	0	0	0	1
+46	47	180	1	9	0	0	1
+47	46	180	1	9	0	0	1
 [NumHoles] = 0
 [NumBlockLabels] = 14
 3	0	1	-1	0	0	1	1	0
-70.099999999999952	0	1	-1	0	0	2	1	0
+70.099999999998914	0	1	-1	0	0	2	1	0
 45	-64.599999999999994	2	-1	1	0	3	100	0
 45	-30.399999999999999	2	-1	1	0	4	-100	0
 45	30.399999999999999	2	-1	2	0	5	100	0

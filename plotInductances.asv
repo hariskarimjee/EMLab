@@ -1,8 +1,0 @@
-load('psi.mat');
-
-psitemp = zeros(5)
-for i = 1:5
-    psitemp(i) = psi(4,4,i);
-end
-
-plot(2:2:10, psitemp, 'x')
