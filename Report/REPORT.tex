@@ -1,7 +1,7 @@
 \documentclass[a4paper]{IEEEtran}
 \pagestyle{empty}
 
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 \usepackage{url}
 \usepackage[top=2.4cm,left=1.5cm,right=1.5cm,bottom=3.5cm]{geometry}
 \usepackage{listings}
@@ -22,6 +22,54 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 
 \section{Introduction}
 Finite Element Method Magnetics (FEMM) is a subset of Finite Element Analysis (FEA) that specialises in electromagnetics. This tool, in combination with MatLab, can be used to program a series of analytical situations, from which the mechanical aspects of the system can be characterised. The actuator and core of the system share the same ferromagnetic properties, windings cover the top and bottom of the core and three air gaps of note exist.
+
+\section{Model Meshing}
+To perform FEA, a model is split into elements. The elements must be small enough to output an accurate enough answer despite the linearisation of the physics occuring. Conversely, the elements cannot be too small as otherwise the computational time increases to an unfeasible (or uneconomical) amount.
+
+FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where the analysis must be of higher resolution and a sparse mesh where it does not. This is evident in figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) and it does not know any information about the overarching complexity of the problem. One example of this is the boundaries involved with moving armature. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in figure \ref{zoomNotDense}. By manually increasing the density of meshing along these lines, FEMM can produce a more functional mesh seen in figure \ref{zoomDense}. This accuracy has its cost in terms of mesh elements and thus computational time, as seen in table \ref{meshTable}.
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{Smartmesh-OFF-NotDenseAirgap.png}
+\caption{Example mesh with smart-meshing disabled. Note the sparseness of the triangulation.}
+\label{noSmartMesh} 
+\end{figure}
+
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{Smartmesh-ON-NotDenseAirgap.png}
+\caption{Example mesh with smart meshing enabled. Note how the density increases around boundaries of interest.}
+\label{smartMesh} 
+\end{figure}
+
+
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{figurezoomnotdense.jpg}
+\caption{FEMM smart-meshing output without specifying the area of interest. The density is low despite smart-meshing being on.}
+\label{zoomNotDense} 
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{figurezoomdense.jpg}
+\caption{FEMM smart-meshing output with specifying the area of interest and increasing the density of mesh elements within.}
+\label{zoomDense} 
+\end{figure}
+
+\begin{table}[]
+\centering
+\begin{tabular}{ccc}
+\textbf{\begin{tabular}[c]{@{}c@{}}Smart-\\ meshing\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Dense\\ Air gap\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Mesh\\ Elements\end{tabular}} \\ \hline
+\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+OFF & OFF & 14790 \\
+OFF & ON & 16334 \\
+ON & OFF & 22668 \\
+ON & ON & 24368 \\
+\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{}
+\end{tabular}
+\caption{A summary of meshing options for the model}
+\label{meshTable}
+\end{table}
+
 
 \section{Winding Resistance}
 
