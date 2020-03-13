@@ -74,25 +74,15 @@ mi_setcurrent('winding_2', 0);
 
 % set number of steps for the armature to move and initialise 3D psi array
 numOfSteps = 10;
-psi = zeros(numOfSteps,4,10);
+psi = zeros(numOfSteps,4,11);
 
 % for all the different currents, get inductances and hence psi values
-for i = 10:1:30
+for i = 0:1:10
     mi_setcurrent('winding_1', i);
     mi_setcurrent('winding_2', i);
     inductances = getInductances(blockProps, blockCoords, numOfSteps);
-    psi(:,:,i) = inductances(:,2:5) * i;
+    psi(:,:,i+1) = inductances(:,2:5) * i;
 end
-
-% figure('Name', 'Psi - I')
-% hold on
-% 
-% plot(2:2:10, psi(1,4,:), 'x')
-% plot(2:2:10, psi(2,4,:), 'x')
-% plot(2:2:10, psi(3,4,:), 'x')
-% plot(2:2:10, psi(4,4,:), 'x')
-% plot(2:2:10, psi(5,4,:), 'x')
-% hold off
 
 figure('Name', 'Inductance - displacement')
 hold on
@@ -107,7 +97,7 @@ mi_saveas('actuator.fem');
 function inductances = getInductances(blockProps, blockCoords, numOfSteps)
     % reset armature to zero, define max & min positions & step size
     armaturePos = 0.0;
-    maxPos = -4.9;
+    maxPos = -5;
     minPos = 0.0;
     stepSize = (maxPos-minPos)/(numOfSteps-1);
 
