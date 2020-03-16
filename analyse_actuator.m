@@ -3,7 +3,7 @@ addpath(genpath('C:\femm42'));
 construct_actuator
 
 % set number of steps for the armature to move and initialise 3D psi array
-numOfSteps = 10;
+numOfSteps = 2;
 psi = zeros(numOfSteps,4,11);
 
 % for all the different currents, get inductances and hence psi values
