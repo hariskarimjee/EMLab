@@ -77,12 +77,11 @@ numOfSteps = 10;
 psi = zeros(numOfSteps,4,10);
 
 % for all the different currents, get inductances and hence psi values
-for i = 0.5:0.5:10
+for i = 10:1:30
     mi_setcurrent('winding_1', i);
     mi_setcurrent('winding_2', i);
-    plotWindingPowerLosses();
-    %inductances = getInductances(blockProps, blockCoords, numOfSteps);
-    %psi(:,:,i) = inductances(:,2:5) * i;
+    inductances = getInductances(blockProps, blockCoords, numOfSteps);
+    psi(:,:,i) = inductances(:,2:5) * i;
 end
 
 % figure('Name', 'Psi - I')
@@ -104,23 +103,6 @@ plot(inductances(:,1), inductances(:,5), 'x');
 hold off
 
 mi_saveas('actuator.fem');
-
-function plotWindingPowerLosses()
-    mi_analyze();
-    mi_loadsolution();
-    CP = mo_getcircuitproperties('winding_1');
-    resistanceFEMM = CP(2)/CP(1)
-    
-    mo_groupselectblock(3);
-    A = mo_blockintegral(5);
-    V = mo_blockintegral(10);
-    mo_clearblock();
-    L = V/A;
-    N = 100;
-    sigma = 58e6;
-    kpf = 0.6;
-    Rw = (N*L)/(sigma*((kpf*A)/N))
-end
 
 function inductances = getInductances(blockProps, blockCoords, numOfSteps)
     % reset armature to zero, define max & min positions & step size
