@@ -20,7 +20,7 @@ blockProps = {'core_linear' 1 0 '<None>' 0 1 0;
               'air' 1 0 '<None>' 0 7 0};
 
 
-steps = 49;bfr,..kkll;ll
+steps = 49;
 armaturePosition = 0.0;
 minPos = 0.0;
 maxPos = -5.0;
