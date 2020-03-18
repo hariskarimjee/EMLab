@@ -30,8 +30,6 @@ L = zeros(steps, 5, 11);
 
 for p = 1:steps
     p
-    move_armature(stepSize, armaturePosition, maxPos);
-    armaturePosition = armaturePosition + stepSize;
     mi_purgemesh();
     mi_createmesh();
     set_linear(blockCoords, blockProps);
@@ -39,15 +37,15 @@ for p = 1:steps
         mi_setcurrent('winding_1', i);
         mi_setcurrent('winding_2', i);
         L(p, 1:4, i+1) = linear_inductances(armaturePosition);
-        i
     end
     set_nonlinear(blockCoords, blockProps);
     for i  = 0:1:10
         mi_setcurrent('winding_1', i);
         mi_setcurrent('winding_2', i);
         L(p, 5, i+1) = nonlinear_inductances();
-        i
     end
+    move_armature(stepSize, armaturePosition, maxPos);
+    armaturePosition = armaturePosition + stepSize;
 end
 
 function move_armature(dx, armPos, maxPos)
