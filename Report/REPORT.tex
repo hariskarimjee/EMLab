@@ -5,6 +5,7 @@
 \usepackage{url}
 \usepackage[top=2.4cm,left=1.5cm,right=1.5cm,bottom=3.5cm]{geometry}
 \usepackage{listings}
+\usepackage{amssymb}
 
 \setlength{\columnsep}{0.24in}
 \setlength{\headsep}{0in}
@@ -20,6 +21,23 @@
 This experiment demonstrated the use of FEMM as an analysis tool for a short stroke ferromagnetic actuator. 
 \end{abstract}
 
+\section{Nomenclature}
+\begin{itemize}
+\item[]{$R_{w}$, Winding resistance, [$\Omega$]}
+\item[]{$l_{w}$, Length into the page of winding, [m]}
+\item[]{$A_{w}$, Area of winding, [m$^{2}$]}
+\item[]{$V_{w}$, Volume of winding, [m$^{3}$]}
+\item[]{$N$, Number of turns in the winding, [-]}
+\item[]{$\sigma$, Conductivity of winding, [Sm$^{-1}$]}
+\item[]{$k_{PF}$, Packing factor of conductors in the winding, [-]}
+\item[]{$L$, Inductance of the winding, [H]}
+\item[]{$\mathcal{R}$, Reluctance, [H$^{-1}$]}
+\item[]{$A_{eff}$, Effective area of air gap, [m$^{2}$]}
+\item[]{$W$, Width of air gap, [m]}
+\item[]{$T$, Thickness of air gap, [m]}
+\item[]{$g$, Air gap length, [m]}
+\end{itemize}
+
 \section{Introduction}
 Finite Element Method Magnetics (FEMM) is a subset of Finite Element Analysis (FEA) that specialises in electromagnetics. This tool, in combination with MatLab, can be used to program a series of analytical situations, from which the mechanical aspects of the system can be characterised. The actuator and core of the system share the same ferromagnetic properties, windings cover the top and bottom of the core and three air gaps of note exist.
 
@@ -34,14 +52,11 @@ FEMM has a smart-meshing tool in which the software analyses the model and alloc
 \label{noSmartMesh} 
 \end{figure}
 
-
 \begin{figure}[ht]
 \includegraphics[width = \linewidth]{Smartmesh-ON-NotDenseAirgap.png}
 \caption{Example mesh with smart meshing enabled. Note how the density increases around boundaries of interest.}
 \label{smartMesh} 
 \end{figure}
-
-
 
 \begin{figure}[ht]
 \includegraphics[width = \linewidth]{figurezoomnotdense.jpg}
@@ -55,7 +70,7 @@ FEMM has a smart-meshing tool in which the software analyses the model and alloc
 \label{zoomDense} 
 \end{figure}
 
-\begin{table}[]
+\begin{table}[ht]
 \centering
 \begin{tabular}{ccc}
 \textbf{\begin{tabular}[c]{@{}c@{}}Smart-\\ meshing\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Dense\\ Air gap\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Mesh\\ Elements\end{tabular}} \\ \hline
@@ -66,14 +81,78 @@ ON & OFF & 22668 \\
 ON & ON & 24368 \\
 \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{}
 \end{tabular}
-\caption{A summary of meshing options for the model}
+\caption{A summary of meshing options for the model.}
 \label{meshTable}
 \end{table}
 
 
 \section{Winding Resistance}
+To calculate the winding resistance, $R_{w}$, two approaches were used: FEMM and analytical. FEMM can calculate the winding's resistance by getting the circuit properties of each winding and obtaining the voltage and current. The analytical approach used block integrals in FEMM to obtain volume and area of the winding and hence the depth into the page can be found using equation \ref{length}:
+
+\begin{equation}
+l_{w} = \frac{V_{w}}{A_{w}}
+\label{length}
+\end{equation}
+
+The resistance is thus calculated using equation \ref{resistance}. The resistances of each calculation method are presented in table \ref{windingResistance}. 
+
+\begin{equation}
+R_{w} = \frac{N l_{w}}{\sigma\left(\frac{k_{PF} A_{w}}{N}\right)}
+\label{resistance}
+\end{equation}
+
+Notable in table \ref{windingResistance} is the difference in estimated values. The analytical value uses the packing factor, $k_{PF}$, that compensates for the space used by the insulating material in a winding. FEMM sees the entire area as conducting material and hence the implied length of wire increases. Given the conductivity, $\sigma$, is the same in both predictions; the greater the implied length of winding, the greater the winding resistance, $R_{w}$. However, FEMM is working with a 2D model and the analysis was performed on the top section of the winding only. This means the analysis does not account for the mean path length around the winding, causing the FEMM estimate to be at least a factor of four out from the analytical prediction. 
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{c|cc}
+\textbf{Method} & \textbf{Current {[}A{]}} & \textbf{\begin{tabular}[c]{@{}c@{}}Winding\\ Resistance {[}$\Omega${]}\end{tabular}} \\ \hline
+ &  &  \\
+FEMM & 10 & 0.0107 \\
+Analytical & 10 & 0.0557
+\end{tabular}
+\caption{A summary of winding resistance calculation for different methods.}
+\label{windingResistance}
+\end{table}
+
+These two methods were plotted for many values of current and the power loss of the winding calculated. The resulting graph can be seen in figure \ref{windingLoss}.
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{ResistanceWindingLoss.jpg}
+\caption{Power loss against current shown for the FEMM predicted values and Analytical evaluation. A quadratic curve produces the line of best fit.}
+\label{windingLoss} 
+\end{figure}
 
 \section{Winding Inductance}
+The inductance of the windings can be found analytically and numerically. To estimate the value analytically, equation \ref{inductance} is followed. 
+
+\begin{equation}
+L = \frac{N^2}{\sum{\mathcal{R}}}
+\label{inductance}
+\end{equation}
+
+To find an analytical expression for the inductance where flux is assumed to be conserved:
+\begin{equation}
+\mathcal{R} =  \frac{l}{\mu_{0}\mu_{r}A}
+\label{reluctance}
+\end{equation}
+
+
+\begin{equation}
+\sum{\mathcal{R}} = \mathcal{R}_{core} + \mathcal{R}_{air} + \mathcal{R}_{armature} + \mathcal{R}_{gap}
+\label{summm}
+\end{equation}
+
+Or fringing effects can be taken into account by substituting equation \ref{EffectiveArea} into equation \ref{reluctance} for $\mathcal{R}_{gap}$ and $\mathcal{R}_{air}$. 
+
+\begin{equation}
+A_{eff} = (W + 2g)(T + 2g)
+\label{EffectiveArea}
+\end{equation}
+
+This gives a total of two analytical values. Numerically, two values of inductance can be estimated using FEMM by using a linear or non-linear approximation of core and armature properties.
+
+
 
 \section{Force on the Armature}
 
