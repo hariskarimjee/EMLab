@@ -5,6 +5,7 @@
 \usepackage{url}
 \usepackage[top=2.4cm,left=1.5cm,right=1.5cm,bottom=3.5cm]{geometry}
 \usepackage{listings}
+\usepackage{amssymb}
 
 \setlength{\columnsep}{0.24in}
 \setlength{\headsep}{0in}
@@ -29,6 +30,12 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 \item[]{$N$, Number of turns in the winding, [-]}
 \item[]{$\sigma$, Conductivity of winding, [Sm$^{-1}$]}
 \item[]{$k_{PF}$, Packing factor of conductors in the winding, [-]}
+\item[]{$L$, Inductance of the winding, [H]}
+\item[]{$\mathcal{R}$, Reluctance, [H$^{-1}$]}
+\item[]{$A_{eff}$, Effective area of air gap, [m$^{2}$]}
+\item[]{$W$, Width of air gap, [m]}
+\item[]{$T$, Thickness of air gap, [m]}
+\item[]{$g$, Air gap length, [m]}
 \end{itemize}
 
 \section{Introduction}
@@ -117,6 +124,35 @@ These two methods were plotted for many values of current and the power loss of 
 \end{figure}
 
 \section{Winding Inductance}
+The inductance of the windings can be found analytically and numerically. To estimate the value analytically, equation \ref{inductance} is followed. 
+
+\begin{equation}
+L = \frac{N^2}{\sum{\mathcal{R}}}
+\label{inductance}
+\end{equation}
+
+To find an analytical expression for the inductance where flux is assumed to be conserved:
+\begin{equation}
+\mathcal{R} =  \frac{l}{\mu_{0}\mu_{r}A}
+\label{reluctance}
+\end{equation}
+
+
+\begin{equation}
+\sum{\mathcal{R}} = \mathcal{R}_{core} + \mathcal{R}_{air} + \mathcal{R}_{armature} + \mathcal{R}_{gap}
+\label{summm}
+\end{equation}
+
+Or fringing effects can be taken into account by substituting equation \ref{EffectiveArea} into equation \ref{reluctance} for $\mathcal{R}_{gap}$ and $\mathcal{R}_{air}$. 
+
+\begin{equation}
+A_{eff} = (W + 2g)(T + 2g)
+\label{EffectiveArea}
+\end{equation}
+
+This gives a total of two analytical values. Numerically, two values of inductance can be estimated using FEMM by using a linear or non-linear approximation of core and armature properties.
+
+
 
 \section{Force on the Armature}
 
