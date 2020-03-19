@@ -39,6 +39,8 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 \end{itemize}
 
 \section{Introduction}
+% COULD PROBABLY DO WITH BULKING UP A BIT
+
 Finite Element Method Magnetics (FEMM) is a subset of Finite Element Analysis (FEA) that specialises in electromagnetics. This tool, in combination with MatLab, can be used to program a series of analytical situations, from which the mechanical aspects of the system can be characterised. The actuator and core of the system share the same ferromagnetic properties, windings cover the top and bottom of the core and three air gaps of note exist, see figure \ref{xsection}.
 
 \begin{figure}[ht]
@@ -166,24 +168,98 @@ This gives a total of two analytical values. Numerically, two values of inductan
 
 
 \section{Force on the Armature}
+% NEEDS A CHEEKY WRITE UP
+
 
 
 \begin{figure}[ht]
 \includegraphics[width = \linewidth]{psi-I-diagrams.jpg}
-\caption{$\Psi$-I diagrams for the four methods of calculating inductance. Note the saturation visible in the non-linear graph. Shown for zero displacement, maximum displacement (-49mm) and seven linearly spaced intervals between (shown as the dashed lines).}
-\label{inductanceGraph} 
+\caption{$\Psi$-I diagrams for the four methods of calculating inductance. Note the saturation visible in the non-linear graph. Shown for zero displacement, maximum displacement ($-49$mm) and seven linearly spaced intervals between (shown as the dashed lines).}
+\label{psi-eye} 
 \end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{Force-Displacement.jpg}
+\caption{Force versus displacement for the four methods of calculating inductance. Tabulated values evident in table \ref{coenergy}.}
+\label{forceGraph} 
+\end{figure}
+
+\begin{table}[]
+\centering
+\begin{tabular}{c|cccc}
+ & \multicolumn{4}{c}{\textbf{Change in Co-Energy {[}J{]}}} \\
+\textbf{\begin{tabular}[c]{@{}c@{}}Armature\\Displacement\\{[}mm{]}\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Analytical\\(no\\fringing)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Analytical\\(fringing)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Numerical\\(linear)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Numerical\\(non-\\linear)\end{tabular}} \\ \hline
+0.200 & 7.867 & 6.620 & 8.442 & 9.110 \\
+0.300 & 8.158 & 6.888 & 8.264 & 8.826 \\
+0.400 & 8.467 & 7.172 & 8.930 & 9.635 \\
+0.500 & 8.793 & 7.473 & 8.977 & 9.694 \\
+0.600 & 9.138 & 7.791 & 9.511 & 10.27 \\
+0.700 & 9.505 & 8.128 & 9.589 & 10.33 \\
+0.800 & 9.893 & 8.486 & 10.09 & 10.93 \\
+0.900 & 10.31 & 8.867 & 10.74 & 11.68 \\
+1.000 & 10.75 & 9.272 & 10.91 & 11.83 \\
+1.100 & 11.21 & 9.703 & 11.67 & 12.68 \\
+1.200 & 11.71 & 10.16 & 11.64 & 12.64 \\
+1.300 & 12.25 & 10.66 & 12.39 & 13.55 \\
+1.400 & 12.82 & 11.18 & 12.58 & 13.72 \\
+1.500 & 13.43 & 11.75 & 13.20 & 14.43 \\
+1.600 & 14.09 & 12.35 & 14.20 & 15.62 \\
+1.700 & 14.79 & 13.00 & 14.82 & 16.31 \\
+1.800 & 15.55 & 13.71 & 15.34 & 16.87 \\
+1.900 & 16.37 & 14.46 & 16.03 & 17.72 \\
+2.000 & 17.26 & 15.28 & 17.30 & 19.13 \\
+2.100 & 18.22 & 16.17 & 17.62 & 19.60 \\
+2.200 & 19.26 & 17.14 & 18.63 & 20.66 \\
+2.300 & 20.40 & 18.19 & 19.74 & 22.06 \\
+2.400 & 21.64 & 19.33 & 21.20 & 23.68 \\
+2.500 & 23.00 & 20.59 & 22.11 & 24.81 \\
+2.600 & 24.48 & 21.97 & 23.88 & 26.92 \\
+2.700 & 26.12 & 23.48 & 24.86 & 28.09 \\
+2.800 & 27.93 & 25.16 & 26.49 & 29.95 \\
+2.900 & 29.93 & 27.01 & 28.66 & 32.69 \\
+3.000 & 32.15 & 29.07 & 30.61 & 34.99 \\
+3.100 & 34.64 & 31.38 & 32.77 & 37.65 \\
+3.200 & 37.42 & 33.96 & 35.27 & 40.75 \\
+3.300 & 40.55 & 36.87 & 38.03 & 44.09 \\
+3.400 & 44.09 & 40.16 & 41.48 & 48.39 \\
+3.500 & 48.11 & 43.9 & 44.66 & 52.40 \\
+3.600 & 52.71 & 48.19 & 49.25 & 58.24 \\
+3.700 & 58.01 & 53.12 & 53.90 & 64.19 \\
+3.800 & 64.14 & 58.85 & 59.57 & 71.51 \\
+3.900 & 71.3 & 65.54 & 65.68 & 79.57 \\
+4.000 & 79.74 & 73.42 & 73.48 & 89.84 \\
+4.100 & 89.76 & 82.81 & 82.65 & 102.2 \\
+4.200 & 101.8 & 94.10 & 93.52 & 116.9 \\
+4.300 & 116.4 & 107.9 & 107.3 & 136.0 \\
+4.400 & 134.5 & 124.8 & 122.6 & 157.4 \\
+4.500 & 157.0 & 146.1 & 145.1 & 188.2 \\
+4.600 & 185.8 & 173.4 & 170.7 & 222.4 \\
+4.700 & 223.3 & 209.0 & 206.0 & 261.7 \\
+4.800 & 273.5 & 256.8 & 253.1 & 298.5 \\
+4.900 & 342.6 & 323.0 & 319.8 & 328.5
+\end{tabular}
+\caption{Tabulated data for the change in co-energy for all changes in position, given to 4 significant figures.}
+\label{coenergy}
+\end{table}
 
 
 \section{Conclusion}
+% NEEDS FINALISING
+
 
 \pagebreak
 \onecolumn
 \section{Appendix}
-The following is a listing of the Matlab script written to achieve this analysis.
-\lstinputlisting[language=Matlab]{ListingCode.m}
+\textsc{\textbf{The following is a listing of the Matlab script written to construct the actuator:}}
+\lstinputlisting[language=Matlab]{construct_actuator_copy.m}
 
-
+\pagebreak
+\textsc{\textbf{The following is a listing of the Matlab script written to analyse the actuator:}}
+\lstinputlisting[language=Matlab]{analyse_actuator_copy.m}
+ 
+\pagebreak
+\textsc{\textbf{The following is a listing of the Matlab script written to produce the graphs and tables:}}
+\lstinputlisting[language=Matlab]{process_copy.m}
 
 
 \end{document}
