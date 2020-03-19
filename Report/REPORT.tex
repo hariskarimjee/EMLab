@@ -39,7 +39,13 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 \end{itemize}
 
 \section{Introduction}
-Finite Element Method Magnetics (FEMM) is a subset of Finite Element Analysis (FEA) that specialises in electromagnetics. This tool, in combination with MatLab, can be used to program a series of analytical situations, from which the mechanical aspects of the system can be characterised. The actuator and core of the system share the same ferromagnetic properties, windings cover the top and bottom of the core and three air gaps of note exist.
+Finite Element Method Magnetics (FEMM) is a subset of Finite Element Analysis (FEA) that specialises in electromagnetics. This tool, in combination with MatLab, can be used to program a series of analytical situations, from which the mechanical aspects of the system can be characterised. The actuator and core of the system share the same ferromagnetic properties, windings cover the top and bottom of the core and three air gaps of note exist, see figure \ref{xsection}.
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{actuator-2.jpg}
+\caption{Cross-sectional view of the actuator with the three air gaps higlighted (All measurements in mm).}
+\label{xsection} 
+\end{figure}
 
 \section{Model Meshing}
 To perform FEA, a model is split into elements. The elements must be small enough to output an accurate enough answer despite the linearisation of the physics occuring. Conversely, the elements cannot be too small as otherwise the computational time increases to an unfeasible (or uneconomical) amount.
@@ -150,11 +156,24 @@ A_{eff} = (W + 2g)(T + 2g)
 \label{EffectiveArea}
 \end{equation}
 
-This gives a total of two analytical values. Numerically, two values of inductance can be estimated using FEMM by using a linear or non-linear approximation of core and armature properties.
+This gives a total of two analytical values. Numerically, two values of inductance can be estimated using FEMM by using a linear or non-linear approximation of core and armature properties. The inductance varies with the displacement of the armature, evident in figure \ref{inductanceGraph}.
 
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{Inductances.jpg}
+\caption{Graph showing inductance versus armature displacement for the varying methods of calculation.}
+\label{inductanceGraph} 
+\end{figure}
 
 
 \section{Force on the Armature}
+
+
+\begin{figure}[ht]
+\includegraphics[width = \linewidth]{psi-I-diagrams.jpg}
+\caption{$\Psi$-I diagrams for the four methods of calculating inductance. Note the saturation visible in the non-linear graph. Shown for zero displacement, maximum displacement (-49mm) and seven linearly spaced intervals between (shown as the dashed lines).}
+\label{inductanceGraph} 
+\end{figure}
+
 
 \section{Conclusion}
 

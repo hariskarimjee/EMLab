@@ -28,7 +28,7 @@ for i = 1:6:49
     if i == 1 || i == 49
         plot(x, y, '-');
     else
-        plot(x, y, '--');
+        plot(x, y, ':');
     end
 end
 xlabel('Current, I [A]');
@@ -51,7 +51,7 @@ for i = 1:6:49
     if i == 1 || i == 49
         plot(x, y, '-');
     else
-        plot(x, y, '--');
+        plot(x, y, ':');
     end
 end
 xlabel('Current, I [A]');
@@ -74,7 +74,7 @@ for i = 1:6:49
     if i == 1 || i == 49
         plot(x, y, '-');
     else
-        plot(x, y, '--');
+        plot(x, y, ':');
     end
 end
 xlabel('Current, I [A]');
