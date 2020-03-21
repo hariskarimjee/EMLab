@@ -20,16 +20,16 @@ blockProps = {'core_linear' 1 0 '<None>' 0 1 0;
               'air' 1 0 '<None>' 0 7 0};
 
 
-steps = 49;
+steps = 50;
 armaturePosition = 0.0;
 minPos = 0.0;
 maxPos = -5.0;
-stepSize = (maxPos - minPos) / (steps - 1);
+stepSize = (maxPos - minPos + 0.1) / (steps - 1);
 
 L = zeros(steps, 5, 11);
 
 for p = 1:steps
-    p
+    armaturePosition
     mi_purgemesh();
     mi_createmesh();
     set_linear(blockCoords, blockProps);

@@ -13,7 +13,7 @@ tiledlayout(2,2);
 for n = 2:5
     nexttile
     hold on
-    for i = 1:11
+    for i = 1:49
         
         
     end
