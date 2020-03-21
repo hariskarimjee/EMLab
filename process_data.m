@@ -3,11 +3,11 @@ load('psi.mat');
 psitemp = zeros(1,11);
 
 figure('Name', 'Psi-I Curves')
-tiledlayout(2,2);
+
 for n = 1:4
-    nexttile
     hold on
-    for i = 1:10
+    subplot(2,2,n)
+    for i = 1:1:10
         for j = 1:11
           psitemp(j) = psi(i,n,j);
 
@@ -25,13 +25,15 @@ hold on
 for n = 1:4
     
     for i = 1:9
-        F(i) = (Coenergy(n,i+1) - Coenergy(n,i))/(4.9e-3/9);
+        F(i) = (Coenergy(n,i+1) - Coenergy(n,i))/((4.9e-3)/9);
     end
-    plot(linspace(0, 4.9, 9), F)
+    plot(linspace(-4.9, 0, 9), flip(F))
     
    
 end
-legend('Linear No Fringing', 'Linear Fringing', 'Linear Numerical', 'Non-Linear Numerical', 'location', 'northwest')
+xlabel('Armature displacement [mm]')
+ylabel('Force [N]')
+legend('Analytical (no fringing)', 'Analytical (fringing)', 'Numerical (linear)', 'Numerical (non-linear)') 
 
 hold off
 
