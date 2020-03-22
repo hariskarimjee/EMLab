@@ -134,11 +134,11 @@ end
 for i = 1:1:48
     Ff(i) = (Ec(i+1) - Ec(i))/((4.9e-3)/50); 
 end
-plot(linspace(-4.9,0,48),flip(Ff(:)), '-')
+plot(linspace(-4.9,0,48),flip(Ff(:)), '--')
 xlabel('Armature displacement [mm]');
 ylabel('Force [N]');
 legend('Analytical (no fringing)', 'Analytical (fringing)', ...
-       'Numerical (linear)', 'Numerical (non-linear)') 
+       'Numerical (linear)', 'Numerical (non-linear)', 'FEMM Calculated') 
 hold off
 
 Ftable = round(F, 4, 'significant');
