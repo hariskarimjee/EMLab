@@ -1,7 +1,7 @@
 load('L.mat');
 linetypes = [":", "--", "-", "-."]; 
 
-figure()
+figure('Name', 'Inductance-Displacement')
 hold on
 for i = 1:1:4
     x = L(1:49,1,11);
@@ -14,7 +14,7 @@ legend('Analytical (no fringing)', 'Analytical (fringing)', ...
        'Numerical (linear)', 'Numerical (non-linear)') 
 hold off
 
-figure()
+figure('Name', '\Psi-I')
 subplot(2,2,1)
 hold on
 for i = 1:6:49
@@ -107,7 +107,7 @@ ylabel('Flux linkage, \Psi [Wb turns]');
 title('Numerical (non-linear)');
 hold off
 
-figure()
+figure('Name', 'Force-Displacement')
 hold on
 linetypes = [":", "--", "-", "-."]; 
 for count = 1:1:4
@@ -126,11 +126,15 @@ for count = 1:1:4
 end
 for n = 1:1:4
    for i = 1:1:48
-      F(i,n) = (CoEnergy(n,i+1) - CoEnergy(n,i))/((4.9e-3)/48); 
+      F(i,n) = (CoEnergy(n,i+1) - CoEnergy(n,i))/((4.9e-3)/50); 
    end
    plot(linspace(-4.9,0,48),flip(F(:,n)),linetypes(n));
 end
 
+for i = 1:1:48
+    Ff(i) = (Ec(i+1) - Ec(i))/((4.9e-3)/50); 
+end
+plot(linspace(-4.9,0,48),flip(Ff(:)), '-')
 xlabel('Armature displacement [mm]');
 ylabel('Force [N]');
 legend('Analytical (no fringing)', 'Analytical (fringing)', ...

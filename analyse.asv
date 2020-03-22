@@ -63,8 +63,8 @@ function linInd = linear_inductances(armPos)
     Rarmature = ((70 - g)*10^-3)/(4e-7 * pi * 1000 * 400e-6);
     Rairvariable = (g*10^-3)/(4e-7 * pi * 400e-6);
     Rtot = Rcore + Rair + Rarmature + Rairvariable;
-    Rairfringe = (0.5e-3)/(4e-7 * pi * (20e-3 + 2*0.5e-3)^2);
-    Rairvariablefringe = (g*10^-3)/(4e-7 * pi * (20e-3 + 2*g*10^-3)^2);
+    Rairfringe = (0.5e-3)/(4e-7 * pi * (20e-3 + g*10^-3)^2);
+    Rairvariablefringe = (g*10^-3)/(4e-7 * pi * (20e-3 + g*10^-3)^2);
     Rtotfringe = Rcore + Rairfringe + Rarmature + Rairvariablefringe;
     Lanalytical = (100^2)/Rtot;
     Lanalyticalfringe = (100^2)/Rtotfringe;
@@ -73,8 +73,7 @@ function linInd = linear_inductances(armPos)
     mi_loadsolution();
     CP = mo_getcircuitproperties('winding_1');
     Lnumericallinear = CP(3)/CP(1);
-    % Inductance values doubled as they are based off of the half
-    % equivalent circuit
+    % Inductance values doubled as they are based off of the half equicab
     linInd = [armPos 2*Lanalytical ...
                          2*Lanalyticalfringe 2*Lnumericallinear];
 end
