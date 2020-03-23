@@ -7,6 +7,8 @@
 \usepackage{listings}
 \usepackage{amssymb}
 \usepackage{siunitx}
+\usepackage{circuitikz}
+
 
 \graphicspath{{figures/}}
 \setlength{\columnsep}{0.24in}
@@ -55,9 +57,9 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 
 \section{Model Meshing}
 
-    To perform FEA, a model is split into elements. The elements must be small enough to output an accurate enough answer despite the linearisation of the physics occuring, whilst not being too small so as to increase the computational time to an unreasonable length.
+    To perform FEA, a model is split into elements. The elements must be small enough to output an accurate enough answer despite the linearisation of the physics involved, whilst not being too small so as to increase the computational time to an unreasonable length.
 
-    FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where higher resolution analysis is required and a sparse mesh where it is not. This is evident in the difference between figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) without knowing any information about the overarching aim of the problem. This is illustrated at the boundaries of the variable air gap between the movable armature and core, which is vital for the analysis of the force-displacement characteristic of the actuator. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in figure \ref{zoomNotDense}. By manually setting the spacing of meshing along these lines, FEMM can produce a much denser, more regular mesh seen in figure \ref{zoomDense}. This accuracy has its cost in terms of mesh elements and computational time, as seen in table \ref{meshTable}.
+    FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where higher resolution analysis is required and a sparse mesh where it is not. This is evident in the difference between figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) without knowing any information about the overarching aim of the problem. This is illustrated at the boundaries of the variable air gap between the movable armature and core, which is vital for the analysis of the force-displacement characteristic of the actuator. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in figure \ref{zoomNotDense}. By manually setting the spacing of meshing along these lines, FEMM can produce a denser, more regular mesh as seen in figure \ref{zoomDense}. This accuracy has its cost in terms of mesh elements (table \ref{meshTable}) and computational time.
 
     \begin{figure}[ht]
         \includegraphics[width = \linewidth]{Smartmesh-OFF-NotDenseAirgap.png}
@@ -115,7 +117,6 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
     \end{equation}
 
     Table \ref{windingResistance} shows a significant difference in estimated values. The analytical value uses a packing factor, \(k_{PF} = 0.6\), that compensates for the space used by the insulating material in a winding. FEMM sees the entire area as conducting material and hence the implied cross sectional area of wire increases. Given the conductivity \(\sigma = 58 \si{MS/m}\) in both predictions, the greater the implied length of winding, the greater the winding resistance, $R_{w}$. However, FEMM is working with a 2D model and the analysis was performed on the top and bottom sections of the winding only. This means the analysis does not account for the whole length around the winding, notably the rounded corners and sides, causing the FEMM estimate to be at least a factor of four smaller than the analytical prediction. 
-
     
     
     \begin{table}[ht]
@@ -130,7 +131,7 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
         \label{windingResistance}
     \end{table}
 
-    The resistances resulting from these two methods were used to calculate the power loss through the windings for a range of current values using equation \ref{powerLoss}. This was then plotted giving the graph in figure \ref{windingLoss}. Clearly, this shows the power loss based on the analytically calculated resistance quickly becomes far greater than that of the FEMM calculated resistance. As such, if the analysis performed on the actuator were to be taken further into real applications the analytical power loss should be considered when specifying power dissipation requirements.
+    The resistances resulting from these two methods were used to calculate the power loss through the windings for a range of current values using equation \ref{powerLoss}. This was then plotted giving the graph in figure \ref{windingLoss}. Clearly, this shows the power loss based on the analytically calculated resistance quickly becomes far greater than that of the FEMM calculated resistance. As such, if the analysis performed on the actuator were to be taken further into real applications, the analytical power loss should be considered when specifying power dissipation requirements, rather than the FEMM output. 
 
     \begin{equation}
         P_{loss} = I^2 R
@@ -144,31 +145,50 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
     \end{figure}
 
 \section{Winding Inductance}
-    The inductance of the windings can be found analytically and numerically. To estimate the value analytically, equation \ref{inductance} is followed. 
+    Similarly to the winding resistance, the inductance of the windings can be found analytically and numerically. To estimate the value analytically equation \ref{inductance} is followed. 
 
     \begin{equation}
         L = \frac{N^2}{\sum{\mathcal{R}}}
         \label{inductance}
     \end{equation}
 
-    To find an analytical expression for the inductance where flux is assumed to be conserved:
-    \begin{equation}
-        \mathcal{R} =  \frac{l}{\mu_{0}\mu_{r}A}
-        \label{reluctance}
-    \end{equation}
+    Assuming flux is conserved, the total reluctance can be calculated based on a magnetic equivalent circuit, fig. \ref{magCircuit}. Note this is only half of the complete circuit for the actuator.
 
+    
 
     \begin{equation}
         \sum{\mathcal{R}} = \mathcal{R}_{core} + \mathcal{R}_{air} + \mathcal{R}_{armature} + \mathcal{R}_{gap}
         \label{summm}
     \end{equation}
 
-    Or fringing effects can be taken into account by substituting equation \ref{EffectiveArea} into equation \ref{reluctance} for $\mathcal{R}_{gap}$ and $\mathcal{R}_{air}$. 
+    \begin{equation}
+        \mathcal{R} =  \frac{l}{\mu_{0}\mu_{r}A}
+        \label{reluctance}
+    \end{equation}
+    
+
+    To improve accuracy, fringing effects can be taken into account by replacing $A$ in  equation \ref{reluctance} with $A_{eff}$ from equation \ref{EffectiveArea} for $\mathcal{R}_{airgap}$ and $\mathcal{R}_{variable}$. 
 
     \begin{equation}
         A_{eff} = (W + 2g)(T + 2g)
         \label{EffectiveArea}
     \end{equation}
+
+    \begin{figure}
+        \centering
+        \begin{circuitikz}[scale=0.65, european]
+            \draw
+            (0,0) to[american voltage source=$NI_{winding1}$, invert] (0,3)
+            to[R=$\mathcal{R}_{core}$] (3,3) to[R=$\mathcal{R}_{air gap}$] (6,3)
+            to[vR=$\mathcal{R}_{armature}$] (6,0)
+            to[vR=$\mathcal{R}_{variable}$] (0,0);
+        \end{circuitikz}
+        
+        \caption{Half equivalent magnetic circuit for the ferromagnetic actuator.}
+        \label{magCircuit}
+    \end{figure}
+
+    As only half of the equivalent circuit (shown in fig \ref{magCircuit}) was used to calculate the inductance, the result was doubled to find the total inductance for the whole actuator. To allow for this, only half of the armature and variable air gap areas was used in the original calculation.
 
     This gives a total of two analytical values. Numerically, two values of inductance can be estimated using FEMM by using a linear or non-linear approximation of core and armature properties. The inductance varies with the displacement of the armature, evident in figure \ref{inductanceGraph}.
 
@@ -262,19 +282,19 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 % NEEDS FINALISING
 
 
-\pagebreak
-\onecolumn
-\section{Appendix}
-\textsc{\textbf{The following is a listing of the Matlab script written to construct the actuator:}}
-\lstinputlisting[language=Matlab]{construct_actuator_copy.m}
+% \pagebreak
+% \onecolumn
+% \section{Appendix}
+% \textsc{\textbf{The following is a listing of the Matlab script written to construct the actuator:}}
+% \lstinputlisting[language=Matlab]{construct_actuator_copy.m}
 
-\pagebreak
-\textsc{\textbf{The following is a listing of the Matlab script written to analyse the actuator:}}
-\lstinputlisting[language=Matlab]{analyse_actuator_copy.m}
+% \pagebreak
+% \textsc{\textbf{The following is a listing of the Matlab script written to analyse the actuator:}}
+% \lstinputlisting[language=Matlab]{analyse_actuator_copy.m}
  
-\pagebreak
-\textsc{\textbf{The following is a listing of the Matlab script written to produce the graphs and tables:}}
-\lstinputlisting[language=Matlab]{process_copy.m}
+% \pagebreak
+% \textsc{\textbf{The following is a listing of the Matlab script written to produce the graphs and tables:}}
+% \lstinputlisting[language=Matlab]{process_copy.m}
 
 
 \end{document}
