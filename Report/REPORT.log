@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  22 MAR 2020 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  23 MAR 2020 17:26
 entering extended mode
 **"c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
 ("c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
@@ -158,40 +158,110 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+)) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count190
 \l__pdf_internal_box=\box48
-) ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
+)) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count191
+\g__xparse_grabber_int=\count192
+\l__xparse_m_args_int=\count193
+\l__xparse_v_nesting_int=\count194
+)
+Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen163
+)) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen164
+\ar@mcellbox=\box49
+\extrarowheight=\dimen165
+\NC@list=\toks20
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box50
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box51
+\l__siunitx_tmp_dim=\dimen166
+\l__siunitx_tmp_int=\count195
+\l__siunitx_number_mantissa_length_int=\count196
+\l__siunitx_number_uncert_length_int=\count197
+\l__siunitx_round_int=\count198
+\l__siunitx_process_decimal_int=\count199
+\l__siunitx_process_uncertainty_int=\count266
+\l__siunitx_process_fixed_int=\count267
+\l__siunitx_process_integer_min_int=\count268
+\l__siunitx_process_precision_int=\count269
+\l__siunitx_group_min_int=\count270
+\l__siunitx_angle_marker_box=\box52
+\l__siunitx_angle_unit_box=\box53
+\l__siunitx_angle_marker_dim=\dimen167
+\l__siunitx_angle_unit_dim=\dimen168
+\l__siunitx_unit_int=\count271
+\l__siunitx_unit_denominator_int=\count272
+\l__siunitx_unit_numerator_int=\count273
+\l__siunitx_unit_prefix_int=\count274
+\l__siunitx_unit_prefix_base_int=\count275
+\l__siunitx_unit_prefix_gram_int=\count276
+\l__siunitx_number_product_int=\count277
+\c__siunitx_one_fill_skip=\skip52
+\l__siunitx_table_unit_align_skip=\skip53
+\l__siunitx_table_exponent_dim=\dimen169
+\l__siunitx_table_integer_dim=\dimen170
+\l__siunitx_table_mantissa_dim=\dimen171
+\l__siunitx_table_marker_dim=\dimen172
+\l__siunitx_table_result_dim=\dimen173
+\l__siunitx_table_uncert_dim=\dimen174
+\l__siunitx_table_fill_pre_dim=\dimen175
+\l__siunitx_table_fill_post_dim=\dimen176
+\l__siunitx_table_fill_mid_dim=\dimen177
+\l__siunitx_table_pre_box=\box54
+\l__siunitx_table_post_box=\box55
+\l__siunitx_table_mantissa_box=\box56
+\l__siunitx_table_result_box=\box57
+\l__siunitx_table_number_align_skip=\skip54
+\l__siunitx_table_text_align_skip=\skip55
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\translator.sty"
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+)) ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
 \openout1 = `REPORT.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
-\scratchdimen=\dimen163
-\scratchbox=\box49
-\nofMPsegments=\count192
-\nofMParguments=\count193
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count194
-\MPscratchDim=\dimen164
-\MPnumerator=\count195
-\makeMPintoPDFobject=\count196
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count278
+\scratchdimen=\dimen178
+\scratchbox=\box58
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen179
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks22
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -230,39 +300,44 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count197
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
-("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+\c@lstlisting=\count284
+("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<actuator-2.jpg, id=1, 638.385pt x 557.08125pt>
-File: actuator-2.jpg Graphic file (type jpg)
-<use actuator-2.jpg>
-Package pdftex.def Info: actuator-2.jpg  used on input line 47.
+<figures/actuator-2.jpg, id=1, 638.385pt x 557.08125pt>
+File: figures/actuator-2.jpg Graphic file (type jpg)
+<use figures/actuator-2.jpg>
+Package pdftex.def Info: figures/actuator-2.jpg  used on input line 51.
 (pdftex.def)             Requested size: 247.40222pt x 215.89226pt.
-<Smartmesh-OFF-NotDenseAirgap.png, id=2, 318.43968pt x 213.79875pt>
-File: Smartmesh-OFF-NotDenseAirgap.png Graphic file (type png)
-<use Smartmesh-OFF-NotDenseAirgap.png>
-Package pdftex.def Info: Smartmesh-OFF-NotDenseAirgap.png  used on input line 58.
+<figures/Smartmesh-OFF-NotDenseAirgap.png, id=2, 318.43968pt x 213.79875pt>
+File: figures/Smartmesh-OFF-NotDenseAirgap.png Graphic file (type png)
+<use figures/Smartmesh-OFF-NotDenseAirgap.png>
+Package pdftex.def Info: figures/Smartmesh-OFF-NotDenseAirgap.png  used on input line 63.
 (pdftex.def)             Requested size: 247.40222pt x 166.10336pt.
-<Smartmesh-ON-NotDenseAirgap.png, id=3, 318.43968pt x 213.79875pt>
-File: Smartmesh-ON-NotDenseAirgap.png Graphic file (type png)
-<use Smartmesh-ON-NotDenseAirgap.png>
-Package pdftex.def Info: Smartmesh-ON-NotDenseAirgap.png  used on input line 64.
+<figures/Smartmesh-ON-NotDenseAirgap.png, id=3, 318.43968pt x 213.79875pt>
+File: figures/Smartmesh-ON-NotDenseAirgap.png Graphic file (type png)
+<use figures/Smartmesh-ON-NotDenseAirgap.png>
+Package pdftex.def Info: figures/Smartmesh-ON-NotDenseAirgap.png  used on input line 69.
 (pdftex.def)             Requested size: 247.40222pt x 166.10336pt.
-<figurezoomnotdense.jpg, id=4, 864.98157pt x 423.83344pt>
-File: figurezoomnotdense.jpg Graphic file (type jpg)
-<use figurezoomnotdense.jpg>
-Package pdftex.def Info: figurezoomnotdense.jpg  used on input line 70.
+<figures/figurezoomnotdense.jpg, id=4, 864.98157pt x 423.83344pt>
+File: figures/figurezoomnotdense.jpg Graphic file (type jpg)
+<use figures/figurezoomnotdense.jpg>
+Package pdftex.def Info: figures/figurezoomnotdense.jpg  used on input line 75.
 (pdftex.def)             Requested size: 247.40222pt x 121.22061pt.
-<figurezoomdense.jpg, id=5, 883.80188pt x 424.58624pt>
-File: figurezoomdense.jpg Graphic file (type jpg)
-<use figurezoomdense.jpg>
-Package pdftex.def Info: figurezoomdense.jpg  used on input line 76.
+<figures/figurezoomdense.jpg, id=5, 883.80188pt x 424.58624pt>
+File: figures/figurezoomdense.jpg Graphic file (type jpg)
+<use figures/figurezoomdense.jpg>
+Package pdftex.def Info: figures/figurezoomdense.jpg  used on input line 81.
 (pdftex.def)             Requested size: 247.40222pt x 118.85094pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -270,44 +345,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1{C:/Users/haris/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/actuator-2.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/Smartmesh-OFF-NotDenseAirgap.png (PNG copy)>]
-<ResistanceWindingLoss.jpg, id=19, 562.1pt x 421.575pt>
-File: ResistanceWindingLoss.jpg Graphic file (type jpg)
-<use ResistanceWindingLoss.jpg>
-Package pdftex.def Info: ResistanceWindingLoss.jpg  used on input line 129.
+ <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/actuator-2.jpg>] [2 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Smartmesh-OFF-NotDenseAirgap.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Smartmesh-ON-NotDenseAirgap.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/figurezoomnotdense.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/figurezoomdense.jpg>]
+<figures/ResistanceWindingLoss.jpg, id=25, 562.1pt x 421.575pt>
+File: figures/ResistanceWindingLoss.jpg Graphic file (type jpg)
+<use figures/ResistanceWindingLoss.jpg>
+Package pdftex.def Info: figures/ResistanceWindingLoss.jpg  used on input line 141.
 (pdftex.def)             Requested size: 247.40222pt x 185.55145pt.
- [2 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/Smartmesh-ON-NotDenseAirgap.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figurezoomnotdense.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figurezoomdense.jpg>]
-<Inductances.jpg, id=26, 562.1pt x 421.575pt>
-File: Inductances.jpg Graphic file (type jpg)
-<use Inductances.jpg>
-Package pdftex.def Info: Inductances.jpg  used on input line 164.
+<figures/Inductances.jpg, id=26, 562.1pt x 421.575pt>
+File: figures/Inductances.jpg Graphic file (type jpg)
+<use figures/Inductances.jpg>
+Package pdftex.def Info: figures/Inductances.jpg  used on input line 176.
 (pdftex.def)             Requested size: 247.40222pt x 185.55145pt.
-<psi-I-diagrams.jpg, id=27, 639.38875pt x 575.14874pt>
-File: psi-I-diagrams.jpg Graphic file (type jpg)
-<use psi-I-diagrams.jpg>
-Package pdftex.def Info: psi-I-diagrams.jpg  used on input line 179.
+<figures/psi-I-diagrams.jpg, id=27, 639.38875pt x 575.14874pt>
+File: figures/psi-I-diagrams.jpg Graphic file (type jpg)
+<use figures/psi-I-diagrams.jpg>
+Package pdftex.def Info: figures/psi-I-diagrams.jpg  used on input line 191.
 (pdftex.def)             Requested size: 247.40222pt x 222.54312pt.
-<F-x.png, id=28, 421.575pt x 316.18124pt>
-File: F-x.png Graphic file (type png)
-<use F-x.png>
-Package pdftex.def Info: F-x.png  used on input line 185.
+<figures/F-x.png, id=28, 421.575pt x 316.18124pt>
+File: figures/F-x.png Graphic file (type png)
+<use figures/F-x.png>
+Package pdftex.def Info: figures/F-x.png  used on input line 197.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 190.
+               Default added (so using `tbp') on input line 202.
 
 
-Overfull \hbox (1.01984pt too wide) in paragraph at lines 192--244
+Overfull \hbox (1.41983pt too wide) in paragraph at lines 204--256
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/ResistanceWindingLoss.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/Inductances.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/psi-I-diagrams.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/F-x.png (PNG copy)>] [4
-
-] ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+ [3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/ResistanceWindingLoss.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Inductances.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/psi-I-diagrams.jpg>] [4 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x.png (PNG copy)>] ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\construct_actuator_copy.m"
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 4.
@@ -345,15 +417,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]) [13] ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux") ) 
 Here is how much of TeX's memory you used:
- 5347 strings out of 481556
- 78906 string characters out of 2913869
- 527195 words of memory out of 3000000
- 20534 multiletter control sequences out of 15000+200000
- 572493 words of font info for 99 fonts, out of 3000000 for 9000
+ 8179 strings out of 481556
+ 159651 string characters out of 2913869
+ 590680 words of memory out of 3000000
+ 23326 multiletter control sequences out of 15000+200000
+ 574838 words of font info for 109 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,14n,42p,1021b,2147s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,14n,42p,1155b,2157s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (13 pages, 1152645 bytes).
+Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (13 pages, 1158129 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
