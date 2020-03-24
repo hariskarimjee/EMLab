@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  23 MAR 2020 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  24 MAR 2020 12:50
 entering extended mode
 **"c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
 ("c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
@@ -86,6 +86,25 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen148
 \c@IEEEbiography=\count178
 \@IEEEtranrubishbin=\box45
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen149
+\lightrulewidth=\dimen150
+\cmidrulewidth=\dimen151
+\belowrulesep=\dimen152
+\belowbottomsep=\dimen153
+\aboverulesep=\dimen154
+\abovetopsep=\dimen155
+\cmidrulesep=\dimen156
+\cmidrulekern=\dimen157
+\defaultaddspace=\dimen158
+\@cmidla=\count179
+\@cmidlb=\count180
+\@aboverulesep=\dimen159
+\@belowrulesep=\dimen160
+\@thisruleclass=\count181
+\@lastruleclass=\count182
+\@thisrulewidth=\dimen161
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
@@ -102,8 +121,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -114,35 +133,35 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-\Gm@cnth=\count179
-\Gm@cntv=\count180
-\c@Gm@tempcnt=\count181
-\Gm@bindingoffset=\dimen151
-\Gm@wd@mp=\dimen152
-\Gm@odd@mp=\dimen153
-\Gm@even@mp=\dimen154
-\Gm@layoutwidth=\dimen155
-\Gm@layoutheight=\dimen156
-\Gm@layouthoffset=\dimen157
-\Gm@layoutvoffset=\dimen158
+\Gm@cnth=\count183
+\Gm@cntv=\count184
+\c@Gm@tempcnt=\count185
+\Gm@bindingoffset=\dimen164
+\Gm@wd@mp=\dimen165
+\Gm@odd@mp=\dimen166
+\Gm@even@mp=\dimen167
+\Gm@layoutwidth=\dimen168
+\Gm@layoutheight=\dimen169
+\Gm@layouthoffset=\dimen170
+\Gm@layoutvoffset=\dimen171
 \Gm@dimlist=\toks16
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
-\lst@mode=\count182
+\lst@mode=\count186
 \lst@gtempboxa=\box46
 \lst@token=\toks17
-\lst@length=\count183
-\lst@currlwidth=\dimen159
-\lst@column=\count184
-\lst@pos=\count185
-\lst@lostspace=\dimen160
-\lst@width=\dimen161
-\lst@newlines=\count186
-\lst@lineno=\count187
-\lst@maxwidth=\dimen162
+\lst@length=\count187
+\lst@currlwidth=\dimen172
+\lst@column=\count188
+\lst@pos=\count189
+\lst@lostspace=\dimen173
+\lst@width=\dimen174
+\lst@newlines=\count190
+\lst@lineno=\count191
+\lst@maxwidth=\dimen175
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count188
-\lst@skipnumbers=\count189
+\c@lstnumber=\count192
+\lst@skipnumbers=\count193
 \lst@framebox=\box47
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
 File: listings.cfg 2019/09/10 1.8c listings configuration
@@ -162,14 +181,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: expl3 2020-02-14 L3 programming layer (loader) 
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count190
+\l__kernel_color_stack_int=\count194
 \l__pdf_internal_box=\box48
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
 Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count191
-\g__xparse_grabber_int=\count192
-\l__xparse_m_args_int=\count193
-\l__xparse_v_nesting_int=\count194
+\l__xparse_current_arg_int=\count195
+\g__xparse_grabber_int=\count196
+\l__xparse_m_args_int=\count197
+\l__xparse_v_nesting_int=\count198
 )
 Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
@@ -177,12 +196,12 @@ Package: amstext 2000/06/29 v2.01 AMS text
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen163
+\ex@=\dimen176
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen164
+\col@sep=\dimen177
 \ar@mcellbox=\box49
-\extrarowheight=\dimen165
+\extrarowheight=\dimen178
 \NC@list=\toks20
 \extratabsurround=\skip50
 \backup@length=\skip51
@@ -191,39 +210,39 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box51
-\l__siunitx_tmp_dim=\dimen166
-\l__siunitx_tmp_int=\count195
-\l__siunitx_number_mantissa_length_int=\count196
-\l__siunitx_number_uncert_length_int=\count197
-\l__siunitx_round_int=\count198
-\l__siunitx_process_decimal_int=\count199
-\l__siunitx_process_uncertainty_int=\count266
-\l__siunitx_process_fixed_int=\count267
-\l__siunitx_process_integer_min_int=\count268
-\l__siunitx_process_precision_int=\count269
-\l__siunitx_group_min_int=\count270
+\l__siunitx_tmp_dim=\dimen179
+\l__siunitx_tmp_int=\count199
+\l__siunitx_number_mantissa_length_int=\count266
+\l__siunitx_number_uncert_length_int=\count267
+\l__siunitx_round_int=\count268
+\l__siunitx_process_decimal_int=\count269
+\l__siunitx_process_uncertainty_int=\count270
+\l__siunitx_process_fixed_int=\count271
+\l__siunitx_process_integer_min_int=\count272
+\l__siunitx_process_precision_int=\count273
+\l__siunitx_group_min_int=\count274
 \l__siunitx_angle_marker_box=\box52
 \l__siunitx_angle_unit_box=\box53
-\l__siunitx_angle_marker_dim=\dimen167
-\l__siunitx_angle_unit_dim=\dimen168
-\l__siunitx_unit_int=\count271
-\l__siunitx_unit_denominator_int=\count272
-\l__siunitx_unit_numerator_int=\count273
-\l__siunitx_unit_prefix_int=\count274
-\l__siunitx_unit_prefix_base_int=\count275
-\l__siunitx_unit_prefix_gram_int=\count276
-\l__siunitx_number_product_int=\count277
+\l__siunitx_angle_marker_dim=\dimen180
+\l__siunitx_angle_unit_dim=\dimen181
+\l__siunitx_unit_int=\count275
+\l__siunitx_unit_denominator_int=\count276
+\l__siunitx_unit_numerator_int=\count277
+\l__siunitx_unit_prefix_int=\count278
+\l__siunitx_unit_prefix_base_int=\count279
+\l__siunitx_unit_prefix_gram_int=\count280
+\l__siunitx_number_product_int=\count281
 \c__siunitx_one_fill_skip=\skip52
 \l__siunitx_table_unit_align_skip=\skip53
-\l__siunitx_table_exponent_dim=\dimen169
-\l__siunitx_table_integer_dim=\dimen170
-\l__siunitx_table_mantissa_dim=\dimen171
-\l__siunitx_table_marker_dim=\dimen172
-\l__siunitx_table_result_dim=\dimen173
-\l__siunitx_table_uncert_dim=\dimen174
-\l__siunitx_table_fill_pre_dim=\dimen175
-\l__siunitx_table_fill_post_dim=\dimen176
-\l__siunitx_table_fill_mid_dim=\dimen177
+\l__siunitx_table_exponent_dim=\dimen182
+\l__siunitx_table_integer_dim=\dimen183
+\l__siunitx_table_mantissa_dim=\dimen184
+\l__siunitx_table_marker_dim=\dimen185
+\l__siunitx_table_result_dim=\dimen186
+\l__siunitx_table_uncert_dim=\dimen187
+\l__siunitx_table_fill_pre_dim=\dimen188
+\l__siunitx_table_fill_post_dim=\dimen189
+\l__siunitx_table_fill_mid_dim=\dimen190
 \l__siunitx_table_pre_box=\box54
 \l__siunitx_table_post_box=\box55
 \l__siunitx_table_mantissa_box=\box56
@@ -236,8 +255,8 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 Package: circuitikz 2020/02/22{} The CircuiTikz circuit drawing package version 1.0.1
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks21
-\pgfutil@tempdima=\dimen178
-\pgfutil@tempdimb=\dimen179
+\pgfutil@tempdima=\dimen191
+\pgfutil@tempdimb=\dimen192
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.tex")) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
 \pgfutil@abb=\box58
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
@@ -254,26 +273,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks24
 ))
-\pgf@x=\dimen180
-\pgf@y=\dimen181
-\pgf@xa=\dimen182
-\pgf@ya=\dimen183
-\pgf@xb=\dimen184
-\pgf@yb=\dimen185
-\pgf@xc=\dimen186
-\pgf@yc=\dimen187
-\pgf@xd=\dimen188
-\pgf@yd=\dimen189
+\pgf@x=\dimen193
+\pgf@y=\dimen194
+\pgf@xa=\dimen195
+\pgf@ya=\dimen196
+\pgf@xb=\dimen197
+\pgf@yb=\dimen198
+\pgf@xc=\dimen199
+\pgf@yc=\dimen256
+\pgf@xd=\dimen257
+\pgf@yd=\dimen258
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count278
-\c@pgf@countb=\count279
-\c@pgf@countc=\count280
-\c@pgf@countd=\count281
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
 \t@pgf@toka=\toks25
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
-\pgf@sys@id@count=\count282
+\pgf@sys@id@count=\count286
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -284,8 +303,8 @@ File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count283
-\pgfsyssoftpath@bigbuffer@items=\count284
+\pgfsyssoftpath@smallbuffer@items=\count287
+\pgfsyssoftpath@bigbuffer@items=\count288
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
@@ -306,52 +325,52 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen190
-\pgfmath@count=\count285
+\pgfmath@dimen=\dimen259
+\pgfmath@count=\count289
 \pgfmath@box=\box59
 \pgfmath@toks=\toks28
 \pgfmath@stack@operand=\toks29
 \pgfmath@stack@operation=\toks30
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex"))) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count286
+\c@pgfmathroundto@lastzeros=\count290
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen191
-\pgf@picmaxx=\dimen192
-\pgf@picminy=\dimen193
-\pgf@picmaxy=\dimen194
-\pgf@pathminx=\dimen195
-\pgf@pathmaxx=\dimen196
-\pgf@pathminy=\dimen197
-\pgf@pathmaxy=\dimen198
-\pgf@xx=\dimen199
-\pgf@xy=\dimen256
-\pgf@yx=\dimen257
-\pgf@yy=\dimen258
-\pgf@zx=\dimen259
-\pgf@zy=\dimen260
+\pgf@picminx=\dimen260
+\pgf@picmaxx=\dimen261
+\pgf@picminy=\dimen262
+\pgf@picmaxy=\dimen263
+\pgf@pathminx=\dimen264
+\pgf@pathmaxx=\dimen265
+\pgf@pathminy=\dimen266
+\pgf@pathmaxy=\dimen267
+\pgf@xx=\dimen268
+\pgf@xy=\dimen269
+\pgf@yx=\dimen270
+\pgf@yy=\dimen271
+\pgf@zx=\dimen272
+\pgf@zy=\dimen273
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen261
-\pgf@path@lasty=\dimen262
+\pgf@path@lastx=\dimen274
+\pgf@path@lasty=\dimen275
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen263
-\pgf@shorten@start@additional=\dimen264
+\pgf@shorten@end@additional=\dimen276
+\pgf@shorten@start@additional=\dimen277
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box60
 \pgf@hbox=\box61
 \pgf@layerbox@main=\box62
-\pgf@picture@serial@count=\count287
+\pgf@picture@serial@count=\count291
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen265
+\pgflinewidth=\dimen278
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen266
-\pgf@pt@y=\dimen267
-\pgf@pt@temp=\dimen268
+\pgf@pt@x=\dimen279
+\pgf@pt@y=\dimen280
+\pgf@pt@temp=\dimen281
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
@@ -360,12 +379,12 @@ File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen269
+\pgfarrowsep=\dimen282
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen270
-\pgf@sys@shading@range@num=\count288
-\pgf@shadingcount=\count289
+\pgf@max=\dimen283
+\pgf@sys@shading@range@num=\count292
+\pgf@shadingcount=\count293
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
@@ -386,91 +405,91 @@ File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen271
-\pgf@nodesepend=\dimen272
+\pgf@nodesepstart=\dimen284
+\pgf@nodesepend=\dimen285
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex")) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty" ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")
-\pgffor@iter=\dimen273
-\pgffor@skip=\dimen274
+\pgffor@iter=\dimen286
+\pgffor@skip=\dimen287
 \pgffor@stack=\toks31
 \pgffor@toks=\toks32
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count290
-\pgfplotmarksize=\dimen275
+\pgf@plot@mark@count=\count294
+\pgfplotmarksize=\dimen288
 )
-\tikz@lastx=\dimen276
-\tikz@lasty=\dimen277
-\tikz@lastxsaved=\dimen278
-\tikz@lastysaved=\dimen279
-\tikz@lastmovetox=\dimen280
-\tikz@lastmovetoy=\dimen281
-\tikzleveldistance=\dimen282
-\tikzsiblingdistance=\dimen283
+\tikz@lastx=\dimen289
+\tikz@lasty=\dimen290
+\tikz@lastxsaved=\dimen291
+\tikz@lastysaved=\dimen292
+\tikz@lastmovetox=\dimen293
+\tikz@lastmovetoy=\dimen294
+\tikzleveldistance=\dimen295
+\tikzsiblingdistance=\dimen296
 \tikz@figbox=\box65
 \tikz@figbox@bg=\box66
 \tikz@tempbox=\box67
 \tikz@tempbox@bg=\box68
-\tikztreelevel=\count291
-\tikznumberofchildren=\count292
-\tikznumberofcurrentchild=\count293
-\tikz@fig@count=\count294
+\tikztreelevel=\count295
+\tikznumberofchildren=\count296
+\tikznumberofcurrentchild=\count297
+\tikz@fig@count=\count298
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count295
-\pgfmatrixcurrentcolumn=\count296
-\pgf@matrix@numberofcolumns=\count297
+\pgfmatrixcurrentrow=\count299
+\pgfmatrixcurrentcolumn=\count300
+\pgf@matrix@numberofcolumns=\count301
 )
-\tikz@expandcount=\count298
+\tikz@expandcount=\count302
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex"
 File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowinset=\dimen284
-\pgfarrowlength=\dimen285
-\pgfarrowwidth=\dimen286
-\pgfarrowlinewidth=\dimen287
+\pgfarrowinset=\dimen297
+\pgfarrowlength=\dimen298
+\pgfarrowwidth=\dimen299
+\pgfarrowlinewidth=\dimen300
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybending.code.tex"
 File: tikzlibrarybending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulebending.code.tex"
 File: pgfmodulebending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulenonlineartransformations.code.tex"
 File: pgfmodulenonlineartransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgftransformnonlinearflatness=\dimen288
+\pgftransformnonlinearflatness=\dimen301
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibrarycurvilinear.code.tex"
 File: pgflibrarycurvilinear.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@curvilinear@time@a=\dimen289
-\pgf@curvilinear@length@a=\dimen290
-\pgf@curvilinear@length@b=\dimen291
-\pgf@curvilinear@length@c=\dimen292
-\pgf@curvilinear@length@d=\dimen293
+\pgf@curvilinear@time@a=\dimen302
+\pgf@curvilinear@length@a=\dimen303
+\pgf@curvilinear@length@b=\dimen304
+\pgf@curvilinear@length@c=\dimen305
+\pgf@curvilinear@length@d=\dimen306
 )
-\pgf@arrows@the@rigidity=\dimen294
+\pgf@arrows@the@rigidity=\dimen307
 )) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.code.tex"
 ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryfpu.code.tex")) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcirc.defines.tex"
-\pgf@circ@count@a=\count299
-\pgf@circ@count@b=\count300
-\pgf@circ@count@c=\count301
-\pgf@circ@res@up=\dimen295
-\pgf@circ@res@down=\dimen296
-\pgf@circ@res@zero=\dimen297
-\pgf@circ@res@left=\dimen298
-\pgf@circ@res@right=\dimen299
-\pgf@circ@res@other=\dimen300
-\pgf@circ@res@step=\dimen301
-\pgf@circ@res@temp=\dimen302
-\pgfstartlinewidth=\dimen303
-\pgf@circ@Rlen=\dimen304
-\pgf@circ@scaled@Rlen=\dimen305
+\pgf@circ@count@a=\count303
+\pgf@circ@count@b=\count304
+\pgf@circ@count@c=\count305
+\pgf@circ@res@up=\dimen308
+\pgf@circ@res@down=\dimen309
+\pgf@circ@res@zero=\dimen310
+\pgf@circ@res@left=\dimen311
+\pgf@circ@res@right=\dimen312
+\pgf@circ@res@other=\dimen313
+\pgf@circ@res@step=\dimen314
+\pgf@circ@res@temp=\dimen315
+\pgfstartlinewidth=\dimen316
+\pgf@circ@Rlen=\dimen317
+\pgf@circ@scaled@Rlen=\dimen318
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircutils.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircshapes.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircmonopoles.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircbipoles.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcirctripoles.tex"
-\pgf@circ@res@count=\count302
+\pgf@circ@res@count=\count306
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircquadpoles.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircmultipoles.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcirclabel.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircvoltage.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcirccurrent.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircflow.tex") ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pgfcircpath.tex")
 
 Package circuitikz Warning: You did not specify one of the voltage directions:
@@ -479,39 +498,294 @@ Package circuitikz Warning: You did not specify one of the voltage directions:
 (circuitikz)                Default directions may have changed, 
 (circuitikz)                please check the manual.
 
-) ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count307
+) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count308
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count309
+\c@listtotal=\count310
+\c@listcount=\count311
+\c@liststart=\count312
+\c@liststop=\count313
+\c@citecount=\count314
+\c@citetotal=\count315
+\c@multicitecount=\count316
+\c@multicitetotal=\count317
+\c@instcount=\count318
+\c@maxnames=\count319
+\c@minnames=\count320
+\c@maxitems=\count321
+\c@minitems=\count322
+\c@citecounter=\count323
+\c@maxcitecounter=\count324
+\c@savedcitecounter=\count325
+\c@uniquelist=\count326
+\c@uniquename=\count327
+\c@refsection=\count328
+\c@refsegment=\count329
+\c@maxextratitle=\count330
+\c@maxextratitleyear=\count331
+\c@maxextraname=\count332
+\c@maxextradate=\count333
+\c@maxextraalpha=\count334
+\c@abbrvpenalty=\count335
+\c@highnamepenalty=\count336
+\c@lownamepenalty=\count337
+\c@maxparens=\count338
+\c@parenlevel=\count339
+\blx@tempcnta=\count340
+\blx@tempcntb=\count341
+\blx@tempcntc=\count342
+\blx@maxsection=\count343
+\blx@maxsegment@0=\count344
+\blx@notetype=\count345
+\blx@parenlevel@text=\count346
+\blx@parenlevel@foot=\count347
+\blx@sectionciteorder@0=\count348
+\blx@entrysetcounter=\count349
+\labelnumberwidth=\skip56
+\labelalphawidth=\skip57
+\biblabelsep=\skip58
+\bibitemsep=\skip59
+\bibnamesep=\skip60
+\bibinitsep=\skip61
+\bibparsep=\skip62
+\bibhang=\skip63
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language78
+\c@mincomprange=\count350
+\c@maxcomprange=\count351
+\c@mincompwidth=\count352
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count353
+\c@savedafterword=\count354
+\c@annotator=\count355
+\c@savedannotator=\count356
+\c@author=\count357
+\c@savedauthor=\count358
+\c@bookauthor=\count359
+\c@savedbookauthor=\count360
+\c@commentator=\count361
+\c@savedcommentator=\count362
+\c@editor=\count363
+\c@savededitor=\count364
+\c@editora=\count365
+\c@savededitora=\count366
+\c@editorb=\count367
+\c@savededitorb=\count368
+\c@editorc=\count369
+\c@savededitorc=\count370
+\c@foreword=\count371
+\c@savedforeword=\count372
+\c@holder=\count373
+\c@savedholder=\count374
+\c@introduction=\count375
+\c@savedintroduction=\count376
+\c@namea=\count377
+\c@savednamea=\count378
+\c@nameb=\count379
+\c@savednameb=\count380
+\c@namec=\count381
+\c@savednamec=\count382
+\c@translator=\count383
+\c@savedtranslator=\count384
+\c@shortauthor=\count385
+\c@savedshortauthor=\count386
+\c@shorteditor=\count387
+\c@savedshorteditor=\count388
+\c@labelname=\count389
+\c@savedlabelname=\count390
+\c@institution=\count391
+\c@savedinstitution=\count392
+\c@lista=\count393
+\c@savedlista=\count394
+\c@listb=\count395
+\c@savedlistb=\count396
+\c@listc=\count397
+\c@savedlistc=\count398
+\c@listd=\count399
+\c@savedlistd=\count400
+\c@liste=\count401
+\c@savedliste=\count402
+\c@listf=\count403
+\c@savedlistf=\count404
+\c@location=\count405
+\c@savedlocation=\count406
+\c@organization=\count407
+\c@savedorganization=\count408
+\c@origlocation=\count409
+\c@savedoriglocation=\count410
+\c@origpublisher=\count411
+\c@savedorigpublisher=\count412
+\c@publisher=\count413
+\c@savedpublisher=\count414
+\c@language=\count415
+\c@savedlanguage=\count416
+\c@origlanguage=\count417
+\c@savedoriglanguage=\count418
+\c@pageref=\count419
+\c@savedpageref=\count420
+\shorthandwidth=\skip64
+\shortjournalwidth=\skip65
+\shortserieswidth=\skip66
+\shorttitlewidth=\skip67
+\shortauthorwidth=\skip68
+\shorteditorwidth=\skip69
+\locallabelnumberwidth=\skip70
+\locallabelalphawidth=\skip71
+\localshorthandwidth=\skip72
+\localshortjournalwidth=\skip73
+\localshortserieswidth=\skip74
+\localshorttitlewidth=\skip75
+\localshortauthorwidth=\skip76
+\localshorteditorwidth=\skip77
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count421
+\c@textcitetotal=\count422
+\c@textcitemaxnames=\count423
+\c@biburlbigbreakpenalty=\count424
+\c@biburlbreakpenalty=\count425
+\c@biburlnumpenalty=\count426
+\c@biburlucpenalty=\count427
+\c@biburllcpenalty=\count428
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count429
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex-ieee\ieee.bbx"
+File: ieee.bbx 2020/02/26 v1.3b biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric-comp.bbx"
+File: numeric-comp.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count430
+\c@bbx:relatedtotal=\count431
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex-ieee\ieee.cbx"
+File: ieee.cbx 2020/02/26 v1.3b biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric-comp.cbx"
+File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count432
+\c@cbx@tempcntb=\count433
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
+File: biblatex.cfg 
+))
+\@quotelevel=\count434
+\@quotereset=\count435
+ ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
 \openout1 = `REPORT.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen306
+\scratchcounter=\count436
+\scratchdimen=\dimen319
 \scratchbox=\box69
-\nofMPsegments=\count304
-\nofMParguments=\count305
+\nofMPsegments=\count437
+\nofMParguments=\count438
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen307
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
+\MPscratchCnt=\count439
+\MPscratchDim=\dimen320
+\MPnumerator=\count440
+\makeMPintoPDFobject=\count441
 \everyMPtoPDFconversion=\toks34
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/grfext\grfext.sty"
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -547,44 +821,59 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count309
+\c@lstlisting=\count442
 ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
 ) ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `REPORT.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'REPORT.bbl' found.
+ ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.bbl")
+Package biblatex Info: Reference section=0 on input line 20.
+Package biblatex Info: Reference segment=0 on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  ("C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <figures/actuator-2.jpg, id=4, 638.385pt x 557.08125pt>
 File: figures/actuator-2.jpg Graphic file (type jpg)
 <use figures/actuator-2.jpg>
-Package pdftex.def Info: figures/actuator-2.jpg  used on input line 53.
+Package pdftex.def Info: figures/actuator-2.jpg  used on input line 55.
 (pdftex.def)             Requested size: 247.40222pt x 215.89226pt.
 <figures/Smartmesh-OFF-NotDenseAirgap.png, id=5, 318.43968pt x 213.79875pt>
 File: figures/Smartmesh-OFF-NotDenseAirgap.png Graphic file (type png)
 <use figures/Smartmesh-OFF-NotDenseAirgap.png>
-Package pdftex.def Info: figures/Smartmesh-OFF-NotDenseAirgap.png  used on input line 65.
+Package pdftex.def Info: figures/Smartmesh-OFF-NotDenseAirgap.png  used on input line 67.
 (pdftex.def)             Requested size: 247.40222pt x 166.10336pt.
 <figures/Smartmesh-ON-NotDenseAirgap.png, id=6, 318.43968pt x 213.79875pt>
 File: figures/Smartmesh-ON-NotDenseAirgap.png Graphic file (type png)
 <use figures/Smartmesh-ON-NotDenseAirgap.png>
-Package pdftex.def Info: figures/Smartmesh-ON-NotDenseAirgap.png  used on input line 71.
+Package pdftex.def Info: figures/Smartmesh-ON-NotDenseAirgap.png  used on input line 73.
 (pdftex.def)             Requested size: 247.40222pt x 166.10336pt.
 <figures/figurezoomnotdense.jpg, id=7, 864.98157pt x 423.83344pt>
 File: figures/figurezoomnotdense.jpg Graphic file (type jpg)
 <use figures/figurezoomnotdense.jpg>
-Package pdftex.def Info: figures/figurezoomnotdense.jpg  used on input line 77.
+Package pdftex.def Info: figures/figurezoomnotdense.jpg  used on input line 79.
 (pdftex.def)             Requested size: 247.40222pt x 121.22061pt.
 <figures/figurezoomdense.jpg, id=8, 883.80188pt x 424.58624pt>
 File: figures/figurezoomdense.jpg Graphic file (type jpg)
 <use figures/figurezoomdense.jpg>
-Package pdftex.def Info: figures/figurezoomdense.jpg  used on input line 83.
+Package pdftex.def Info: figures/figurezoomdense.jpg  used on input line 85.
 (pdftex.def)             Requested size: 247.40222pt x 118.85094pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -593,54 +882,55 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/actuator-2.jpg>] [2 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Smartmesh-OFF-NotDenseAirgap.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Smartmesh-ON-NotDenseAirgap.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/figurezoomnotdense.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/figurezoomdense.jpg>]
-<figures/ResistanceWindingLoss.jpg, id=28, 562.1pt x 421.575pt>
+<figures/ResistanceWindingLoss.jpg, id=27, 562.1pt x 421.575pt>
 File: figures/ResistanceWindingLoss.jpg Graphic file (type jpg)
 <use figures/ResistanceWindingLoss.jpg>
-Package pdftex.def Info: figures/ResistanceWindingLoss.jpg  used on input line 142.
+Package pdftex.def Info: figures/ResistanceWindingLoss.jpg  used on input line 144.
 (pdftex.def)             Requested size: 247.40222pt x 185.55145pt.
-\alshift=\dimen308
-\realshift=\dimen309
-\realshift=\dimen310
-\realshift=\dimen311
-\realshift=\dimen312
-<figures/Inductances.jpg, id=29, 562.1pt x 421.575pt>
-File: figures/Inductances.jpg Graphic file (type jpg)
-<use figures/Inductances.jpg>
-Package pdftex.def Info: figures/Inductances.jpg  used on input line 196.
-(pdftex.def)             Requested size: 247.40222pt x 185.55145pt.
-<figures/psi-I-diagrams.jpg, id=30, 639.38875pt x 575.14874pt>
+\alshift=\dimen321
+\realshift=\dimen322
+\realshift=\dimen323
+\realshift=\dimen324
+\realshift=\dimen325
+<figures/Inductances.png, id=28, 421.575pt x 316.18124pt>
+File: figures/Inductances.png Graphic file (type png)
+<use figures/Inductances.png>
+Package pdftex.def Info: figures/Inductances.png  used on input line 204.
+(pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
+<figures/psi-I-diagrams.jpg, id=29, 639.38875pt x 575.14874pt>
 File: figures/psi-I-diagrams.jpg Graphic file (type jpg)
 <use figures/psi-I-diagrams.jpg>
-Package pdftex.def Info: figures/psi-I-diagrams.jpg  used on input line 211.
+Package pdftex.def Info: figures/psi-I-diagrams.jpg  used on input line 221.
 (pdftex.def)             Requested size: 247.40222pt x 222.54312pt.
-<figures/F-x.png, id=31, 421.575pt x 316.18124pt>
+<figures/F-x.png, id=30, 421.575pt x 316.18124pt>
 File: figures/F-x.png Graphic file (type png)
 <use figures/F-x.png>
-Package pdftex.def Info: figures/F-x.png  used on input line 217.
+Package pdftex.def Info: figures/F-x.png  used on input line 227.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 222.
-
-
-Overfull \hbox (1.41983pt too wide) in paragraph at lines 224--276
+Overfull \hbox (1.41983pt too wide) in paragraph at lines 234--286
  [][] 
  []
 
-[3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/ResistanceWindingLoss.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Inductances.jpg>] [4 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/psi-I-diagrams.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x.png (PNG copy)>] ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux") ) 
+[3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/ResistanceWindingLoss.jpg>] [4 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Inductances.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/psi-I-diagrams.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x.png (PNG copy)>] [5
+
+] ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
+Package logreq Info: Writing requests to 'REPORT.run.xml'.
+\openout1 = `REPORT.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 29303 strings out of 481556
- 728131 string characters out of 2913869
- 1065701 words of memory out of 3000000
- 44190 multiletter control sequences out of 15000+200000
- 571622 words of font info for 105 fonts, out of 3000000 for 9000
+ 36766 strings out of 481556
+ 873075 string characters out of 2913869
+ 1597242 words of memory out of 3000000
+ 51561 multiletter control sequences out of 15000+200000
+ 570555 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,15n,72p,1143b,1021s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (4 pages, 1117783 bytes).
+ 68i,15n,72p,1366b,1122s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (5 pages, 1123021 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

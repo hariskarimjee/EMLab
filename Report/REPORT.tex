@@ -1,6 +1,7 @@
 \documentclass[a4paper]{IEEEtran}
 \pagestyle{empty}
 
+\usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage[top=2.4cm,left=1.5cm,right=1.5cm,bottom=3.5cm]{geometry}
@@ -8,8 +9,9 @@
 \usepackage{amssymb}
 \usepackage{siunitx}
 \usepackage{circuitikz}
+\usepackage[style=ieee]{biblatex}
 
-
+\addbibresource{ref.bib}
 \graphicspath{{figures/}}
 \setlength{\columnsep}{0.24in}
 \setlength{\headsep}{0in}
@@ -21,9 +23,9 @@
 \author{R. M. Inston and H. Karimjee}
 
 \maketitle
-\begin{abstract}
-This experiment demonstrated the use of FEMM as an analysis tool for a short stroke ferromagnetic actuator. 
-\end{abstract}
+% \begin{abstract}
+% This experiment demonstrated the use of FEMM as an analysis tool for a short stroke ferromagnetic actuator. 
+% \end{abstract}
 
 \section{Nomenclature}
     \begin{itemize}
@@ -45,9 +47,9 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 \section{Introduction}
 % COULD PROBABLY DO WITH BULKING UP A BIT
 
-    Finite Element Method Magnetics (FEMM) is an implementation of Finite Element Analysis (FEA) that specialises in electro-magnetics. This tool, in combination with MATLAB or another scripting language such as Python, can be used to create a series of numerical situations, from which a electro-magnetic and then mechanical analysis can be extracted. 
+    Finite Element Method Magnetics (FEMM) is an implementation of Finite Element Analysis (FEA) that specialises in electro-magnetics. This tool, in combination with MATLAB or another scripting language such as Python, can be used to create a series of numerical simulations, from which a electro-magnetic and then mechanical analysis can be extracted. 
     
-    Here, FEMM is being used to characterise a magnetic actuator, made up of an armature and a core which share the same ferromagnetic properties, two sets of windings around the top and bottom of the core and three air gaps of note, as in figure \ref{xsection}. This characterisation will be done analytically, neglecting and accounting for fringing, and numerically, using both a linear and non-linear ferromagnetic material. 
+    Here, FEMM is being used to characterise a magnetic actuator, outlined in \cite{labPartA}, made up of an armature and a core which share the same ferromagnetic properties, two sets of windings around the top and bottom of the core and three air gaps of note, as in Fig \ref{xsection}. This characterisation will be done in four situations: analytically, neglecting and accounting for fringing, and numerically, using both a linear and non-linear ferromagnetic material. 
 
     \begin{figure}[ht]
         \includegraphics[width = \linewidth]{actuator-2.jpg}
@@ -59,7 +61,7 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 
     To perform FEA, a model is split into elements. The elements must be small enough to output an accurate enough answer despite the linearisation of the physics involved, whilst not being too small so as to increase the computational time to an unreasonable length.
 
-    FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where higher resolution analysis is required and a sparse mesh where it is not. This is evident in the difference between figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) without knowing any information about the overarching aim of the problem. This is illustrated at the boundaries of the variable air gap between the movable armature and core, which is vital for the analysis of the force-displacement characteristic of the actuator. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in figure \ref{zoomNotDense}. By manually setting the spacing of meshing along these lines, FEMM can produce a denser, more regular mesh as seen in figure \ref{zoomDense}. This accuracy has its cost in terms of mesh elements (table \ref{meshTable}) and computational time.
+    FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where higher resolution analysis is required and a sparse mesh where it is not. This is evident in the difference between figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) without knowing any information about the overarching aim of the problem. This is illustrated at the boundaries of the variable air gap between the movable armature and core, which is vital for the analysis of the force-displacement characteristic of the actuator. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in Fig \ref{zoomNotDense}. By manually setting the spacing of meshing along these lines, FEMM can produce a denser, more regular mesh as seen in Fig \ref{zoomDense}. This accuracy has its cost in terms of mesh elements (Table \ref{meshTable}) and computational time; in running larger simulations than the ones carried out here, careful thought should be put into which areas of a model require more accurate analysis to avoid excessive computational requirements but maintaining a valid output.
 
     \begin{figure}[ht]
         \includegraphics[width = \linewidth]{Smartmesh-OFF-NotDenseAirgap.png}
@@ -102,14 +104,14 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 
 
 \section{Winding Resistance}
-    To calculate the winding resistance, $R_{w}$, two approaches were used: extracting resistance from FEMM and analytical. FEMM can calculate the winding resistance by obtaining the voltage and current across and through the winding respectively, and finding the resistance using Ohm's law. The analytical approach used block integrals in FEMM to obtain winding area and volume, and hence the winding depth (into the page) can be found using equation \ref{length}:
+    To calculate the winding resistance, $R_{w}$, two approaches were used: extracting resistance from FEMM and analytical. FEMM can calculate the winding resistance by obtaining the voltage and current across and through the winding respectively, and finding the resistance using Ohm's law. The analytical approach used block integrals in FEMM to obtain winding area and volume, and hence the winding depth (into the page) can be found using Eq \ref{length}:
 
     \begin{equation}
         l_{w} = \frac{V_{w}}{A_{w}}
         \label{length}
     \end{equation}
 
-    The analytical resistance is thus calculated using equation \ref{resistance}. The resistances of each calculation method are presented in table \ref{windingResistance}. 
+    The analytical resistance is thus calculated using Eq \ref{resistance}. The resistances of each calculation method are presented in table \ref{windingResistance}. 
 
     \begin{equation}
         R_{w} = \frac{N l_{w}}{\sigma\left(\frac{k_{PF} A_{w}}{N}\right)}
@@ -131,7 +133,7 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
         \label{windingResistance}
     \end{table}
 
-    The resistances resulting from these two methods were used to calculate the power loss through the windings for a range of current values using equation \ref{powerLoss}. This was then plotted giving the graph in figure \ref{windingLoss}. Clearly, this shows the power loss based on the analytically calculated resistance quickly becomes far greater than that of the FEMM calculated resistance. As such, if the analysis performed on the actuator were to be taken further into real applications, the analytical power loss should be considered when specifying power dissipation requirements, rather than the FEMM output. 
+    The resistances resulting from these two methods were used to calculate the power loss through the windings for a range of current values using Eq \ref{powerLoss}. This was then plotted giving the graph in Fig \ref{windingLoss}. Clearly, this shows the power loss based on the analytically calculated resistance quickly becomes far greater than that of the FEMM calculated resistance. As such, if the analysis performed on the actuator were to be taken further into real applications, the analytical power loss should be considered when specifying power dissipation requirements, rather than the FEMM output. 
 
     \begin{equation}
         P_{loss} = I^2 R
@@ -140,21 +142,20 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
     
     \begin{figure}[ht]
         \includegraphics[width = \linewidth]{ResistanceWindingLoss.jpg}
-        \caption{Power loss against current based on equation \ref{powerLoss} for analytical and FEMM calculated resistances. A quadratic curve produces the line of best fit.}
+        \caption{Power loss against current based on Eq \ref{powerLoss} for analytical and FEMM calculated resistances. A quadratic curve produces the line of best fit.}
         \label{windingLoss} 
     \end{figure}
 
 \section{Winding Inductance}
-    Similarly to the winding resistance, the inductance of the windings can be found analytically and numerically. To estimate the value analytically equation \ref{inductance} is followed. 
+    Similarly to the winding resistance, the inductance of the windings can be found analytically and numerically. The value can be calculated analytically with Eq \ref{inductance}. 
 
     \begin{equation}
         L = \frac{N^2}{\sum{\mathcal{R}}}
         \label{inductance}
     \end{equation}
 
-    Assuming flux is conserved, the total reluctance can be calculated based on a magnetic equivalent circuit, fig. \ref{magCircuit}. Note this is only half of the complete circuit for the actuator.
+    Assuming flux is conserved, the total reluctance can be calculated based on a magnetic equivalent circuit, Fig \ref{magCircuit}. Note this is only half of the complete circuit for the actuator.
 
-    
 
     \begin{equation}
         \sum{\mathcal{R}} = \mathcal{R}_{core} + \mathcal{R}_{air} + \mathcal{R}_{armature} + \mathcal{R}_{gap}
@@ -167,14 +168,14 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
     \end{equation}
     
 
-    To improve accuracy, fringing effects can be taken into account by replacing $A$ in  equation \ref{reluctance} with $A_{eff}$ from equation \ref{EffectiveArea} for $\mathcal{R}_{airgap}$ and $\mathcal{R}_{variable}$. 
+    To improve accuracy, fringing effects can be taken into account by replacing $A$ in  Eq \ref{reluctance} with $A_{eff}$ from Eq \ref{EffectiveArea} for $\mathcal{R}_{airgap}$ and $\mathcal{R}_{variable}$. 
 
     \begin{equation}
         A_{eff} = (W + 2g)(T + 2g)
         \label{EffectiveArea}
     \end{equation}
 
-    \begin{figure}
+    \begin{figure}[ht]
         \centering
         \begin{circuitikz}[scale=0.65, european]
             \draw
@@ -188,13 +189,20 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
         \label{magCircuit}
     \end{figure}
 
-    As only half of the equivalent circuit (shown in fig \ref{magCircuit}) was used to calculate the inductance, the result was doubled to find the total inductance for the whole actuator. To allow for this, only half of the armature and variable air gap areas was used in the original calculation.
+    As only half of the equivalent circuit (shown in Fig \ref{magCircuit}) was used to calculate the inductance, the result was doubled to obtain the inductance of the whole actuator. To allow for this, only half of the armature and variable air gap areas were used in the original calculation. 
 
-    This gives a total of two analytical values. Numerically, two values of inductance can be estimated using FEMM by using a linear or non-linear approximation of core and armature properties. The inductance varies with the displacement of the armature, evident in figure \ref{inductanceGraph}.
+    Assuming flux is conserved and then accounting for fringing gives two analytical values. Numerically, two values of inductance can be obtained from FEMM by using a linear and non-linear approximation of core and armature properties. FEMM outputs winding current and flux linkage for each assigned internal circuit; from this inductance can be calculated with Eq \ref{fluxInductance}. Winding current and flux linkage were obtained for one of the winding circuits, and an inductance calculated. As with the analytical inductance, this was then doubled to obtain the inductance for both windings - only possible as the actuator is symmetrical. 
 
-    \begin{figure}[ht]
-        \includegraphics[width = \linewidth]{Inductances.jpg}
-        \caption{Graph showing inductance versus armature displacement for the varying methods of calculation.}
+    \begin{equation}
+        L = \frac{\psi}{I}
+        \label{fluxInductance}
+    \end{equation}
+
+     The variation in inductance with armature displacement is shown in Fig \ref{inductanceGraph}. Clearly, the closer the armature is to the core the greater the inductance. This is the expected behaviour, as from Eq \ref{inductance} a smaller total reluctance will give a larger inductance. The total reluctance is very sensitive to the width of the variable airgap and therefore the armature position. As air has a much smaller relative permeability (\(\mu_r\)) than the core material, a large airgap will dominate the circuit and give a large total reluctance and therefore a small inductance. As the airgap gets smaller, its reluctance drops and the core material begins to dominate the circuit with its higher relative permeability, leading to a lower total reluctance and higher inductance. The inductance for the non-linear core material shows the effect of saturation: as the armature approaches the closed position (-4.9mm displacement) the inductance doesn't follow the same trend as the linear material and analytical approaches.
+
+    \begin{figure}[htb]
+        \includegraphics[width = \linewidth]{Inductances.png}
+        \caption{Graph showing inductance versus armature displacement for the varying methods of calculation. Armature in open positon has zero displacement.}
         \label{inductanceGraph} 
     \end{figure}
 
@@ -202,6 +210,8 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 \section{Force on the Armature}
 % NEEDS A CHEEKY WRITE UP
 % THAT IT DOES
+
+    Calculating the force on the armature was acheived 
 
     The force on the armature of the actuator is exponentially related to its position relative to the core. As the armature approaches the core the air-gap narrows, and so the reluctance of the magnetic circuit decreases and hence the inductance of the coil increases. This allows a stronger magnetic field for a given winding current, and therefore a greater force applied to the armature.
 
@@ -219,7 +229,7 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
         \label{forceGraph} 
     \end{figure}
 
-    \begin{table}[]
+    \begin{table}[ht]
         \centering
         \begin{tabular}{c|cccc}
             & \multicolumn{4}{c}{\textbf{Change in Co-Energy {[}J{]}}} \\
@@ -281,6 +291,7 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 \section{Conclusion}
 % NEEDS FINALISING
 
+\printbibliography
 
 % \pagebreak
 % \onecolumn
@@ -295,6 +306,5 @@ This experiment demonstrated the use of FEMM as an analysis tool for a short str
 % \pagebreak
 % \textsc{\textbf{The following is a listing of the Matlab script written to produce the graphs and tables:}}
 % \lstinputlisting[language=Matlab]{process_copy.m}
-
 
 \end{document}

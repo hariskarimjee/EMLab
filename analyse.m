@@ -74,7 +74,7 @@ function linInd = linear_inductances(armPos)
     CP = mo_getcircuitproperties('winding_1');
     Lnumericallinear = CP(3)/CP(1);
     % Inductance values doubled as they are based off of the half
-    % equivalent circuit
+    % circuit
     linInd = [armPos 2*Lanalytical ...
                          2*Lanalyticalfringe 2*Lnumericallinear];
 end

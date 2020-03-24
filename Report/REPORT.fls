@@ -46,6 +46,8 @@ INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi7t.tfm
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
@@ -222,6 +224,48 @@ INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pg
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcirccurrent.tex
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcircflow.tex
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcircpath.tex
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric-comp.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric-comp.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.cbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.cbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux
 OUTPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux
@@ -229,10 +273,20 @@ INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\sup
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\grfext\grfext.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\grfext\grfext.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-basic-dictionary-English.dict
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-basic-dictionary-English.dict
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+OUTPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.bcf
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.bbl
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.bbl
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.bbl
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
@@ -302,10 +356,6 @@ INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi7t.vf
-INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
-INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
@@ -320,11 +370,11 @@ INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\El
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\ResistanceWindingLoss.jpg
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\ResistanceWindingLoss.jpg
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\ResistanceWindingLoss.jpg
-INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.jpg
-INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.jpg
-INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.jpg
-INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.jpg
-INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.jpg
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.png
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.png
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.png
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.png
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\Inductances.png
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\psi-I-diagrams.jpg
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\psi-I-diagrams.jpg
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\psi-I-diagrams.jpg
@@ -335,7 +385,11 @@ INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\El
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\F-x.png
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\F-x.png
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\figures\F-x.png
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux
+INPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.run.xml
+OUTPUT c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.run.xml
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
@@ -359,7 +413,7 @@ INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfon
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
-INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmbi8a.pfb
-INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmbi8a.pfb
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmri8a.pfb
+INPUT C:\Users\haris\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmri8a.pfb
