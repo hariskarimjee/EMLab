@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  24 MAR 2020 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  24 MAR 2020 16:14
 entering extended mode
 **"c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
 ("c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
@@ -876,7 +876,7 @@ File: figures/figurezoomdense.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/figurezoomdense.jpg  used on input line 85.
 (pdftex.def)             Requested size: 247.40222pt x 118.85094pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5711) has occurred while \output is active []
 
  [1{C:/Users/haris/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -895,42 +895,36 @@ Package pdftex.def Info: figures/ResistanceWindingLoss.jpg  used on input line 1
 <figures/Inductances.png, id=28, 421.575pt x 316.18124pt>
 File: figures/Inductances.png Graphic file (type png)
 <use figures/Inductances.png>
-Package pdftex.def Info: figures/Inductances.png  used on input line 204.
+Package pdftex.def Info: figures/Inductances.png  used on input line 209.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
-<figures/psi-I-diagrams.jpg, id=29, 639.38875pt x 575.14874pt>
+ [3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/ResistanceWindingLoss.jpg>]
+<figures/psi-I-diagrams.jpg, id=32, 639.38875pt x 575.14874pt>
 File: figures/psi-I-diagrams.jpg Graphic file (type jpg)
 <use figures/psi-I-diagrams.jpg>
-Package pdftex.def Info: figures/psi-I-diagrams.jpg  used on input line 221.
+Package pdftex.def Info: figures/psi-I-diagrams.jpg  used on input line 231.
 (pdftex.def)             Requested size: 247.40222pt x 222.54312pt.
-<figures/F-x.png, id=30, 421.575pt x 316.18124pt>
+<figures/F-x.png, id=33, 421.575pt x 316.18124pt>
 File: figures/F-x.png Graphic file (type png)
 <use figures/F-x.png>
-Package pdftex.def Info: figures/F-x.png  used on input line 227.
+Package pdftex.def Info: figures/F-x.png  used on input line 237.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
-
-Overfull \hbox (1.41983pt too wide) in paragraph at lines 234--286
- [][] 
- []
-
-[3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/ResistanceWindingLoss.jpg>] [4 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Inductances.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/psi-I-diagrams.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x.png (PNG copy)>] [5
-
-] ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
+ [4 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Inductances.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/psi-I-diagrams.jpg> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x.png (PNG copy)>] ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
 Package logreq Info: Writing requests to 'REPORT.run.xml'.
 \openout1 = `REPORT.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36766 strings out of 481556
- 873075 string characters out of 2913869
- 1597242 words of memory out of 3000000
- 51561 multiletter control sequences out of 15000+200000
+ 36769 strings out of 481556
+ 873172 string characters out of 2913869
+ 1583296 words of memory out of 3000000
+ 51564 multiletter control sequences out of 15000+200000
  570555 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,15n,72p,1366b,1122s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,15n,72p,1441b,1124s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (5 pages, 1123021 bytes).
+Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (4 pages, 1123073 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

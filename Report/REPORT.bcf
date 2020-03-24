@@ -2184,6 +2184,8 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">labPartA</bcf:citekey>
+    <bcf:citekey order="2">labPartB</bcf:citekey>
+    <bcf:citekey order="3">labPartB</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

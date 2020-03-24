@@ -28,6 +28,9 @@ stepSize = (maxPos - minPos + 0.1) / (steps - 1);
 
 L = zeros(steps, 5, 11);
 Ec = zeros(steps, 1);
+
+%function to loop through and analyse armature positions for current
+%ranging from 0:10A
 for p = 1:steps
     armaturePosition
     mi_purgemesh();

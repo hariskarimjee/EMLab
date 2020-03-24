@@ -835,13 +835,13 @@
 [CircuitProps]  = 2
   <BeginCircuit>
     <CircuitName> = "winding_1"
-    <TotalAmps_re> = 0
+    <TotalAmps_re> = 10
     <TotalAmps_im> = 0
     <CircuitType> = 1
   <EndCircuit>
   <BeginCircuit>
     <CircuitName> = "winding_2"
-    <TotalAmps_re> = 0
+    <TotalAmps_re> = 10
     <TotalAmps_im> = 0
     <CircuitType> = 1
   <EndCircuit>

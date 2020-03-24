@@ -61,7 +61,7 @@
 
     To perform FEA, a model is split into elements. The elements must be small enough to output an accurate enough answer despite the linearisation of the physics involved, whilst not being too small so as to increase the computational time to an unreasonable length.
 
-    FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where higher resolution analysis is required and a sparse mesh where it is not. This is evident in the difference between figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) without knowing any information about the overarching aim of the problem. This is illustrated at the boundaries of the variable air gap between the movable armature and core, which is vital for the analysis of the force-displacement characteristic of the actuator. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in Fig \ref{zoomNotDense}. By manually setting the spacing of meshing along these lines, FEMM can produce a denser, more regular mesh as seen in Fig \ref{zoomDense}. This accuracy has its cost in terms of mesh elements (Table \ref{meshTable}) and computational time; in running larger simulations than the ones carried out here, careful thought should be put into which areas of a model require more accurate analysis to avoid excessive computational requirements but maintaining a valid output.
+    FEMM has a smart-meshing tool in which the software analyses the model and allocates a dense mesh where higher resolution analysis is required and a sparse mesh where it is not. This is evident in the difference between figures \ref{noSmartMesh} \& \ref{smartMesh}. Although useful, this feature increases the mesh elements (see table \ref{meshTable}) without knowing any information about the overarching aim of the problem. This is illustrated at the boundaries of the variable air gap between the movable armature and core, which is vital for the analysis of the force-displacement characteristic of the actuator. Smart-meshing fails to recognise these edges as paramount to the analysis and produces a grid seen in Fig \ref{zoomNotDense}. By manually setting the spacing of meshing along these lines as suggested in \cite{labPartB} Section II, FEMM can produce a denser, more regular mesh as seen in Fig \ref{zoomDense}. This accuracy has its cost in terms of mesh elements (Table \ref{meshTable}) and computational time; in running larger simulations than the ones carried out here, careful thought should be put into which areas of a model require more accurate analysis to avoid excessive computational requirements but maintaining a valid output.
 
     \begin{figure}[ht]
         \includegraphics[width = \linewidth]{Smartmesh-OFF-NotDenseAirgap.png}
@@ -189,17 +189,22 @@
         \label{magCircuit}
     \end{figure}
 
-    As only half of the equivalent circuit (shown in Fig \ref{magCircuit}) was used to calculate the inductance, the result was doubled to obtain the inductance of the whole actuator. To allow for this, only half of the armature and variable air gap areas were used in the original calculation. 
+    As only half of the equivalent circuit (shown in Fig \ref{magCircuit}) was used to calculate the inductance, the result was doubled to obtain the effective inductance of the whole actuator. To allow for this, only half of the armature and variable air gap areas were used in the original calculation. 
 
-    Assuming flux is conserved and then accounting for fringing gives two analytical values. Numerically, two values of inductance can be obtained from FEMM by using a linear and non-linear approximation of core and armature properties. FEMM outputs winding current and flux linkage for each assigned internal circuit; from this inductance can be calculated with Eq \ref{fluxInductance}. Winding current and flux linkage were obtained for one of the winding circuits, and an inductance calculated. As with the analytical inductance, this was then doubled to obtain the inductance for both windings - only possible as the actuator is symmetrical. 
+    Assuming flux is conserved and then accounting for fringing gives two analytical values. Numerically, two values of inductance can be obtained from FEMM by using a linear and non-linear approximation of core and armature properties. FEMM outputs winding current and flux linkage for each assigned internal circuit; from this inductance can be calculated with Eq \ref{fluxInductance}. Winding current and flux linkage were obtained for one of the winding circuits, and an inductance calculated. As with the analytical inductance, this was then doubled to obtain the effective total inductance for both windings - only possible as the actuator is symmetrical. 
 
     \begin{equation}
         L = \frac{\psi}{I}
         \label{fluxInductance}
     \end{equation}
 
-     The variation in inductance with armature displacement is shown in Fig \ref{inductanceGraph}. Clearly, the closer the armature is to the core the greater the inductance. This is the expected behaviour, as from Eq \ref{inductance} a smaller total reluctance will give a larger inductance. The total reluctance is very sensitive to the width of the variable airgap and therefore the armature position. As air has a much smaller relative permeability (\(\mu_r\)) than the core material, a large airgap will dominate the circuit and give a large total reluctance and therefore a small inductance. As the airgap gets smaller, its reluctance drops and the core material begins to dominate the circuit with its higher relative permeability, leading to a lower total reluctance and higher inductance. The inductance for the non-linear core material shows the effect of saturation: as the armature approaches the closed position (-4.9mm displacement) the inductance doesn't follow the same trend as the linear material and analytical approaches.
+    The variation in inductance with armature displacement is shown in Fig \ref{inductanceGraph}. Clearly, the closer the armature is to the core the greater the inductance. This is the expected behaviour, as from Eq \ref{inductance} a smaller total reluctance will give a larger inductance. The total reluctance is very sensitive to the width of the variable airgap and therefore the armature position. As air has a much smaller relative permeability (\(\mu_r\)) than the core material, a large airgap will dominate the circuit and give a large total reluctance which significantly limits the flux travelling around the circuit, giving a small inductance. As the airgap gets smaller, its reluctance drops and the core material begins to dominate the circuit with its higher relative permeability, leading to a lower total reluctance allowing more flux to travel arond the circuit, giving a higher inductance. The inductance for the non-linear core material shows the effect of saturation: as the armature approaches the closed position (-4.9mm displacement) the inductance doesn't follow the same trend as the numerically simulated linear material and analytical approaches.
 
+    The analytical model accounting for fringing effects has higher inductance at all actuator positions than the model assuming flux is conserved. This is due to fringing increasing the effective area of the airgap and therefore decreasing its reluctance. 
+    
+    For armature positions close to the core, the analytically calculated (with fringing) and numerically simulated inductances are very similar, which suggests the approximation of fringing effects using Eq \ref{EffectiveArea} is relatively accurate for small airgap sizes. As the airgap increases however, the two inductances diverge significantly, suggesting the approximation is only accurate for small values of g.
+
+    
     \begin{figure}[htb]
         \includegraphics[width = \linewidth]{Inductances.png}
         \caption{Graph showing inductance versus armature displacement for the varying methods of calculation. Armature in open positon has zero displacement.}
@@ -211,9 +216,14 @@
 % NEEDS A CHEEKY WRITE UP
 % THAT IT DOES
 
-    Calculating the force on the armature was acheived 
+    The method for calculating the force on the armature is outlined in \cite{labPartB} Section VI. In following this method, \(\Psi-I\) diagrams were plotted with \(\Psi\) extracted from FEMM. The change in co-energy between armature positions was found by numerically integrating the area between curves (successive armature positions) in Fig \ref{psi-eye}. The force on the armature between each position was then calculated as Eq \ref{armatureForce}, effectively taking work done and dividing it by displacement.
 
-    The force on the armature of the actuator is exponentially related to its position relative to the core. As the armature approaches the core the air-gap narrows, and so the reluctance of the magnetic circuit decreases and hence the inductance of the coil increases. This allows a stronger magnetic field for a given winding current, and therefore a greater force applied to the armature.
+    \begin{equation}
+        F = \frac{\Delta E_{mech}}{\Delta x}
+        \label{armatureForce}
+    \end{equation}
+
+    The force on the armature of the actuator is related to its position relative to the core. As the armature approaches the core the air-gap narrows, and so the reluctance of the magnetic circuit decreases and hence the inductance of the coil increases. This allows a stronger magnetic field for a given winding current, and therefore a greater force applied to the armature. 
 
 
 
@@ -231,58 +241,7 @@
 
     \begin{table}[ht]
         \centering
-        \begin{tabular}{c|cccc}
-            & \multicolumn{4}{c}{\textbf{Change in Co-Energy {[}J{]}}} \\
-            \textbf{\begin{tabular}[c]{@{}c@{}}Armature\\Displacement\\{[}mm{]}\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Analytical\\(no\\fringing)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Analytical\\(fringing)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Numerical\\(linear)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Numerical\\(non-\\linear)\end{tabular}} \\ \hline
-            0.200 & 7.867 & 6.620 & 8.442 & 9.110 \\
-            0.300 & 8.158 & 6.888 & 8.264 & 8.826 \\
-            0.400 & 8.467 & 7.172 & 8.930 & 9.635 \\
-            0.500 & 8.793 & 7.473 & 8.977 & 9.694 \\
-            0.600 & 9.138 & 7.791 & 9.511 & 10.27 \\
-            0.700 & 9.505 & 8.128 & 9.589 & 10.33 \\
-            0.800 & 9.893 & 8.486 & 10.09 & 10.93 \\
-            0.900 & 10.31 & 8.867 & 10.74 & 11.68 \\
-            1.000 & 10.75 & 9.272 & 10.91 & 11.83 \\
-            1.100 & 11.21 & 9.703 & 11.67 & 12.68 \\
-            1.200 & 11.71 & 10.16 & 11.64 & 12.64 \\
-            1.300 & 12.25 & 10.66 & 12.39 & 13.55 \\
-            1.400 & 12.82 & 11.18 & 12.58 & 13.72 \\
-            1.500 & 13.43 & 11.75 & 13.20 & 14.43 \\
-            1.600 & 14.09 & 12.35 & 14.20 & 15.62 \\
-            1.700 & 14.79 & 13.00 & 14.82 & 16.31 \\
-            1.800 & 15.55 & 13.71 & 15.34 & 16.87 \\
-            1.900 & 16.37 & 14.46 & 16.03 & 17.72 \\
-            2.000 & 17.26 & 15.28 & 17.30 & 19.13 \\
-            2.100 & 18.22 & 16.17 & 17.62 & 19.60 \\
-            2.200 & 19.26 & 17.14 & 18.63 & 20.66 \\
-            2.300 & 20.40 & 18.19 & 19.74 & 22.06 \\
-            2.400 & 21.64 & 19.33 & 21.20 & 23.68 \\
-            2.500 & 23.00 & 20.59 & 22.11 & 24.81 \\
-            2.600 & 24.48 & 21.97 & 23.88 & 26.92 \\
-            2.700 & 26.12 & 23.48 & 24.86 & 28.09 \\
-            2.800 & 27.93 & 25.16 & 26.49 & 29.95 \\
-            2.900 & 29.93 & 27.01 & 28.66 & 32.69 \\
-            3.000 & 32.15 & 29.07 & 30.61 & 34.99 \\
-            3.100 & 34.64 & 31.38 & 32.77 & 37.65 \\
-            3.200 & 37.42 & 33.96 & 35.27 & 40.75 \\
-            3.300 & 40.55 & 36.87 & 38.03 & 44.09 \\
-            3.400 & 44.09 & 40.16 & 41.48 & 48.39 \\
-            3.500 & 48.11 & 43.90 & 44.66 & 52.40 \\
-            3.600 & 52.71 & 48.19 & 49.25 & 58.24 \\
-            3.700 & 58.01 & 53.12 & 53.90 & 64.19 \\
-            3.800 & 64.14 & 58.85 & 59.57 & 71.51 \\
-            3.900 & 71.30 & 65.54 & 65.68 & 79.57 \\
-            4.000 & 79.74 & 73.42 & 73.48 & 89.84 \\
-            4.100 & 89.76 & 82.81 & 82.65 & 102.2 \\
-            4.200 & 101.8 & 94.10 & 93.52 & 116.9 \\
-            4.300 & 116.4 & 107.9 & 107.3 & 136.0 \\
-            4.400 & 134.5 & 124.8 & 122.6 & 157.4 \\
-            4.500 & 157.0 & 146.1 & 145.1 & 188.2 \\
-            4.600 & 185.8 & 173.4 & 170.7 & 222.4 \\
-            4.700 & 223.3 & 209.0 & 206.0 & 261.7 \\
-            4.800 & 273.5 & 256.8 & 253.1 & 298.5 \\
-            4.900 & 342.6 & 323.0 & 319.8 & 328.5
-        \end{tabular}
+        
         \caption{Tabulated data for the change in co-energy for all changes in position, given to 4 significant figures.}
         \label{coenergy}
     \end{table}

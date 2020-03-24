@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber REPORT"] 1585054011 "REPORT.bcf" "REPORT.bbl" "REPORT" 1585054255
-  "REPORT.bcf" 1585054255 100780 e4ce7fe15086931b4473edcf2c684118 "pdflatex"
+["biber REPORT"] 1585065060 "REPORT.bcf" "REPORT.bbl" "REPORT" 1585066458
+  "REPORT.bcf" 1585066457 100880 84ece83a291bbcf589ccebec902acce0 "pdflatex"
   "ref.bib" 1585054003 334 4f3442846d0768b079e55837e43f83bf ""
   (generated)
-  "REPORT.blg"
   "REPORT.bbl"
-["pdflatex"] 1585054249 "c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex" "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report/REPORT.pdf" "REPORT" 1585054255
+  "REPORT.blg"
+["pdflatex"] 1585066452 "c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex" "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report/REPORT.pdf" "REPORT" 1585066458
   "C:/Users/haris/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1584893207 9852523 d2f658214c6ed1f0f57c9cdd9ed24ee1 ""
   "C:/Users/haris/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1585053547 79702 d20d453c87df744213d3a678b0e13af2 ""
   "C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -197,12 +197,12 @@
   "C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463131981 57049 34128738f682d033422ca125f82e5d62 ""
   "IEEEtran.cls" 1584456158 206055 775b18b42342447aea341b76a89fcb61 ""
-  "REPORT.aux" 1585054255 4670 db7c2c2461b118353211bddbf989358b "pdflatex"
-  "REPORT.bbl" 1585054016 1522 c901da58d50b595c0566db6157f508e2 "biber REPORT"
-  "REPORT.run.xml" 1585054255 2409 d352ea628a8591dd983e25d5ece1830e "pdflatex"
-  "REPORT.tex" 1585054234 18630 633dae2bddb1b32063338d7e264b1fd7 ""
-  "c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex" 1585054234 18630 633dae2bddb1b32063338d7e264b1fd7 ""
-  "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report/REPORT.aux" 1585054255 4670 db7c2c2461b118353211bddbf989358b ""
+  "REPORT.aux" 1585066457 4879 fdd458abb4c4f32883c48e8c3959b269 "pdflatex"
+  "REPORT.bbl" 1585065070 2516 c3ec29fdb0f38daf23a068cf28df4adb "biber REPORT"
+  "REPORT.run.xml" 1585066458 2409 d352ea628a8591dd983e25d5ece1830e "pdflatex"
+  "REPORT.tex" 1585066450 16981 e0dd9283c05a4fc28304a2d1f76e1f9d ""
+  "c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex" 1585066450 16981 e0dd9283c05a4fc28304a2d1f76e1f9d ""
+  "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report/REPORT.aux" 1585066457 4879 fdd458abb4c4f32883c48e8c3959b269 ""
   "figures/F-x.png" 1584890680 22778 8aef83636cf6f72ea6b587eddcbb376d ""
   "figures/Inductances.png" 1585049085 23143 aa66cce2646efafe112335ab3b38cdd8 ""
   "figures/ResistanceWindingLoss.jpg" 1584564031 18762 3957bca511fcf6f891de876e3f84a784 ""
@@ -213,10 +213,10 @@
   "figures/figurezoomnotdense.jpg" 1584456159 283926 16d3d0d94476ac423aafbf5413d3242d ""
   "figures/psi-I-diagrams.jpg" 1584812723 50080 4deb06e0e10c2e74319e391496376921 ""
   (generated)
-  "REPORT.pdf"
-  "REPORT.bcf"
-  "REPORT.run.xml"
   "REPORT.log"
   "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report/REPORT.pdf"
+  "REPORT.run.xml"
   "REPORT.aux"
   "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report/REPORT.log"
+  "REPORT.pdf"
+  "REPORT.bcf"
