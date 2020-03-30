@@ -216,33 +216,96 @@
 % NEEDS A CHEEKY WRITE UP
 % THAT IT DOES
 
-    The method for calculating the force on the armature is outlined in \cite{labPartB} Section VI. In following this method, \(\Psi-I\) diagrams were plotted with \(\Psi\) extracted from FEMM. The change in co-energy between armature positions was found by numerically integrating the area between curves (successive armature positions) in Fig \ref{psi-eye}. The force on the armature between each position was then calculated as Eq \ref{armatureForce}, effectively taking work done and dividing it by displacement.
+    The method for calculating the force on the armature is outlined in \cite{labPartB} Section VI. In following this method, \(\Psi-I\) diagrams were plotted with \(\Psi\) extracted from FEMM. The change in co-energy between armature positions was found by numerically integrating the area between curves (successive armature positions) in Fig \ref{psi-eye}. The force on the armature between each position was then calculated as in Eq \ref{armatureForce}, effectively taking work done and dividing it by displacement. This was done for 50 armature positions to maximise resolution without excessive computational time.
+
+    The \(\Psi - I\) diagrams for the analytical and numerical linear situations follow the same pattern: \(\Psi\) linearly increasing with \(I\), with a steeper gradient the closer the armature is to the core. This is sensible as the flux able to be pushed around the circuit by the magneto-motive force set up by the windings will increase both as the MMF is increased and as the reluctance of the magnetic circuit decreases. The numerical non-linear case is the most interesting, showing evidence of saturation when the actuator approaches the closed position where the curve begins to tail off. The analytical case with no fringing has the least flux linkage across armature positions as it has the highest reluctance flux path; the one accounting for fringing the highest flux linkage having the lowest reluctance flux path due to the increased airgap area.  
+
+    
 
     \begin{equation}
         F = \frac{\Delta E_{mech}}{\Delta x}
         \label{armatureForce}
     \end{equation}
 
-    The force on the armature of the actuator is related to its position relative to the core. As the armature approaches the core the air-gap narrows, and so the reluctance of the magnetic circuit decreases and hence the inductance of the coil increases. This allows a stronger magnetic field for a given winding current, and therefore a greater force applied to the armature. 
+    The four force-displacement graphs shown in Fig \ref{forceGraph} have broadly similar characteristics, following an exponential trend where force increases as the armature approaches the closed position. The analytical cases show a higher force in closed position, and lower force in the open position than the linear numerical case, further suggesting that the fringing approximation is imperfect. The non-linear numerical case has the highest force through all armature positions until saturation begins to have an effect, which compared to the linear numerical case suggests the model is non-linear across the whole B-H curve rather than just accounting for saturation. 
 
+    From Fig \ref{forceFEMM} and Table \ref{coenergy}, the force and co-energy calculated using the plotted \(\Psi-I\) curves and those taken from FEMM are almost identical, with values only slightly different at a few displacements. This could be down to small errors in the numerical integration performed on the \(\Psi-I\) curves. That these two curves match also suggests the analysis performed on the data extracted from FEMM in the other cases is also correct, as it followed the same methodology as for the non-linear case here.
 
 
     \begin{figure}[ht]
-        \includegraphics[width = \linewidth]{psi-I-diagrams.jpg}
+        \includegraphics[width = \linewidth]{psi-I-diagrams.png}
         \caption{$\Psi$-I diagrams for the four methods of calculating inductance. Note saturation reached in the non-linear graph. Shown for zero displacement, maximum displacement ($-49$mm) and seven linearly spaced intervals between (dashed lines).}
         \label{psi-eye} 
     \end{figure}
 
     \begin{figure}[ht]
         \includegraphics[width = \linewidth]{F-x.png}
-        \caption{Force versus displacement for the four methods of calculating inductance. Tabulated values evident in table \ref{coenergy}.}
+        \caption{Force versus displacement for the four methods of calculating inductance. Armature in open position at 0mm.}
         \label{forceGraph} 
+    \end{figure}
+
+    \begin{figure}[ht]
+        \includegraphics[width = \linewidth]{F-x-FEMM.png}
+        \caption{Force versus displacement for the numerical non-linear case and extracted directly from FEMM.}
+        \label{forceFEMM} 
     \end{figure}
 
     \begin{table}[ht]
         \centering
-        
-        \caption{Tabulated data for the change in co-energy for all changes in position, given to 4 significant figures.}
+        \begin{tabular}{@{}ccc@{}}
+            \toprule
+            Displacement {[}mm{]} & $\Delta E_{c_{(\Psi-I)}}$  & $\Delta E_{c_{FEMM}}$   \\ \midrule
+            -0.1                  & 0.0018 & 0.0018 \\
+            -0.2                  & 0.0018 & 0.0018 \\
+            -0.3                  & 0.0019 & 0.0019 \\
+            -0.4                  & 0.0020 & 0.0020 \\
+            -0.5                  & 0.0020 & 0.0020 \\
+            -0.6                  & 0.0021 & 0.0021 \\
+            -0.7                  & 0.0022 & 0.0022 \\
+            -0.8                  & 0.0023 & 0.0022 \\
+            -0.9                  & 0.0023 & 0.0024 \\
+            -1.0                  & 0.0025 & 0.0025 \\
+            -1.1                  & 0.0026 & 0.0026 \\
+            -1.2                  & 0.0026 & 0.0026 \\
+            -1.3                  & 0.0027 & 0.0028 \\
+            -1.4                  & 0.0029 & 0.0028 \\
+            -1.5                  & 0.0031 & 0.0031 \\
+            -1.6                  & 0.0032 & 0.0032 \\
+            -1.7                  & 0.0033 & 0.0033 \\
+            -1.8                  & 0.0035 & 0.0035 \\
+            -1.9                  & 0.0037 & 0.0037 \\
+            -2.0                  & 0.0038 & 0.0039 \\
+            -2.1                  & 0.0041 & 0.0040 \\
+            -2.2                  & 0.0044 & 0.0044 \\
+            -2.3                  & 0.0045 & 0.0045 \\
+            -2.4                  & 0.0049 & 0.0049 \\
+            -2.5                  & 0.0052 & 0.0051 \\
+            -2.6                  & 0.0055 & 0.0055 \\
+            -2.7                  & 0.0058 & 0.0059 \\
+            -2.8                  & 0.0062 & 0.0062 \\
+            -2.9                  & 0.0067 & 0.0067 \\
+            -3.0                  & 0.0071 & 0.0072 \\
+            -3.1                  & 0.0079 & 0.0078 \\
+            -3.2                  & 0.0084 & 0.0083 \\
+            -3.3                  & 0.0092 & 0.0092 \\
+            -3.4                  & 0.0098 & 0.0099 \\
+            -3.5                  & 0.0108 & 0.0109 \\
+            -3.6                  & 0.0121 & 0.0119 \\
+            -3.7                  & 0.0131 & 0.0132 \\
+            -3.8                  & 0.0148 & 0.0147 \\
+            -3.9                  & 0.0164 & 0.0163 \\
+            -4.0                  & 0.0183 & 0.0185 \\
+            -4.1                  & 0.0210 & 0.0210 \\
+            -4.2                  & 0.0239 & 0.0240 \\
+            -4.3                  & 0.0279 & 0.0277 \\
+            -4.4                  & 0.0322 & 0.0323 \\
+            -4.5                  & 0.0383 & 0.0383 \\
+            -4.6                  & 0.0452 & 0.0453 \\
+            -4.7                  & 0.0529 & 0.0533 \\
+            -4.8                  & 0.0601 & 0.0602 \\
+            -4.9                  & 0.0659 & 0.0663 \\ \bottomrule   
+        \end{tabular}
+        \caption{Tabulated data for the change in co-energy between each simulated position. Change given between tabulated and previous displacements.}
         \label{coenergy}
     \end{table}
 

@@ -1,4 +1,5 @@
 load('L.mat');
+load('CoEnergyFEMM.mat');
 linetypes = [":", "--", "-", "-."]; 
 
 figure('Name', 'Inductance-Displacement')
@@ -13,6 +14,7 @@ ylabel('Magnetic circuit inductance, L [H]');
 legend('Analytical (no fringing)', 'Analytical (fringing)', ...
        'Numerical (linear)', 'Numerical (non-linear)') 
 hold off
+movegui([2,-2])
 
 figure('Name', '\Psi-I')
 subplot(2,2,1)
@@ -106,12 +108,13 @@ xlabel('Current, I [A]');
 ylabel('Flux linkage, \Psi [Wb turns]');
 title('Numerical (non-linear)');
 hold off
+movegui([2, -510])
 
 figure('Name', 'Force-Displacement')
 hold on
 linetypes = [":", "--", "-", "-."]; 
 for count = 1:1:4
-    for i = 1:1:49
+    for i = 1:1:50
         x = 0:1:10;
         y = [];
         for j = 1:1:11
@@ -125,20 +128,33 @@ for count = 1:1:4
     end
 end
 for n = 1:1:4
-   for i = 1:1:48
-      F(i,n) = (CoEnergy(n,i+1) - CoEnergy(n,i))/((4.9e-3)/50); 
+   for i = 1:1:49
+      F(i,n) = (CoEnergy(n,i+1) - CoEnergy(n,i))/((4.9e-3)/49); 
    end
-   plot(linspace(-4.9,0,48),flip(F(:,n)),linetypes(n));
+   plot(linspace(-4.9,0,49),flip(F(:,n)),linetypes(n));
 end
 
-for i = 1:1:48
-    Ff(i) = (Ec(i+1) - Ec(i))/((4.9e-3)/50); 
+for i = 1:1:49
+    Ff(i) = (Ec(i+1) - Ec(i))/((4.9e-3)/49); 
 end
-plot(linspace(-4.9,0,48),flip(Ff(:)), '--')
+
 xlabel('Armature displacement [mm]');
 ylabel('Force [N]');
 legend('Analytical (no fringing)', 'Analytical (fringing)', ...
-       'Numerical (linear)', 'Numerical (non-linear)', 'FEMM Calculated') 
+       'Numerical (linear)', 'Numerical (non-linear)') 
 hold off
+movegui([590 -2])
 
-Ftable = round(F, 4, 'significant');
+figure('Name', '\Psi - I Co-energy vs FEMM Co-energy')
+hold on
+plot(linspace(-4.9,0,49), flip(Ff(:)), '--')
+plot(linspace(-4.9,0,49), flip(F(:,4)), 'x')
+xlabel('Armature displacement [mm]');
+ylabel('Force [N]');
+legend('Numerical (non-linear)', 'Extracted from FEMM')
+hold off
+movegui([590 -510])
+
+Cotable = zeros(2,50);
+Cotable(1,:) = round(CoEnergy(4,:), 6, 'significant');
+Cotable(2,:) = round(Ec, 6, 'significant');

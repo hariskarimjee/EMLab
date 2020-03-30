@@ -29,7 +29,7 @@ stepSize = (maxPos - minPos + 0.1) / (steps - 1);
 L = zeros(steps, 5, 11);
 Ec = zeros(steps, 1);
 
-%function to loop through and analyse armature positions for current
+%function to loop through and analyse each armature position for current
 %ranging from 0:10A
 for p = 1:steps
     armaturePosition
@@ -51,6 +51,7 @@ for p = 1:steps
     armaturePosition = armaturePosition + stepSize;
 end
 
+%
 function move_armature(dx, armPos, maxPos)
     if armPos > maxPos
         mi_selectgroup(2);
