@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  30 MAR 2020 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.22)  1 APR 2020 11:47
 entering extended mode
 **"c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
 ("c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/REPORT.tex"
@@ -895,23 +895,23 @@ Package pdftex.def Info: figures/ResistanceWindingLoss.jpg  used on input line 1
 <figures/Inductances.png, id=28, 421.575pt x 316.18124pt>
 File: figures/Inductances.png Graphic file (type png)
 <use figures/Inductances.png>
-Package pdftex.def Info: figures/Inductances.png  used on input line 209.
+Package pdftex.def Info: figures/Inductances.png  used on input line 211.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
  [3 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/ResistanceWindingLoss.jpg>]
 <figures/psi-I-diagrams.png, id=32, 421.575pt x 316.18124pt>
 File: figures/psi-I-diagrams.png Graphic file (type png)
 <use figures/psi-I-diagrams.png>
-Package pdftex.def Info: figures/psi-I-diagrams.png  used on input line 236.
+Package pdftex.def Info: figures/psi-I-diagrams.png  used on input line 238.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
 <figures/F-x.png, id=33, 421.575pt x 316.18124pt>
 File: figures/F-x.png Graphic file (type png)
 <use figures/F-x.png>
-Package pdftex.def Info: figures/F-x.png  used on input line 242.
+Package pdftex.def Info: figures/F-x.png  used on input line 244.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
 <figures/F-x-FEMM.png, id=34, 421.575pt x 316.18124pt>
 File: figures/F-x-FEMM.png Graphic file (type png)
 <use figures/F-x-FEMM.png>
-Package pdftex.def Info: figures/F-x-FEMM.png  used on input line 248.
+Package pdftex.def Info: figures/F-x-FEMM.png  used on input line 250.
 (pdftex.def)             Requested size: 247.40222pt x 185.55627pt.
  [4 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/Inductances.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/psi-I-diagrams.png (PNG copy)> <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x.png (PNG copy)>] [5 <c:/Users/haris/OneDrive - University of Bristol/Engineering/Second Year/Electromechanical Energy Conversion/EMLab/Report/figures/F-x-FEMM.png (PNG copy)>] ("c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.aux")
 Package logreq Info: Writing requests to 'REPORT.run.xml'.
@@ -919,15 +919,15 @@ Package logreq Info: Writing requests to 'REPORT.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36776 strings out of 481556
- 873306 string characters out of 2913869
- 1585305 words of memory out of 3000000
- 51570 multiletter control sequences out of 15000+200000
+ 36780 strings out of 481556
+ 873427 string characters out of 2913869
+ 1585372 words of memory out of 3000000
+ 51574 multiletter control sequences out of 15000+200000
  570555 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,15n,72p,1441b,1122s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,15n,72p,1441b,1183s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/haris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (5 pages, 1156922 bytes).
+Output written on "c:\Users\haris\OneDrive - University of Bristol\Engineering\Second Year\Electromechanical Energy Conversion\EMLab\Report\REPORT.pdf" (5 pages, 1160130 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

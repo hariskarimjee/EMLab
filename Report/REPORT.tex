@@ -146,6 +146,8 @@
         \label{windingLoss} 
     \end{figure}
 
+\label{windRes}
+
 \section{Winding Inductance}
     Similarly to the winding resistance, the inductance of the windings can be found analytically and numerically. The value can be calculated analytically with Eq \ref{inductance}. 
 
@@ -305,7 +307,7 @@
             -4.8                  & 0.0601 & 0.0602 \\
             -4.9                  & 0.0659 & 0.0663 \\ \bottomrule   
         \end{tabular}
-        \caption{Tabulated data for the change in co-energy between each simulated position. Change given between tabulated and previous displacements.}
+        \caption{Tabulated data for the change in co-energy between each simulated position. Change given between specified and previous displacements.}
         \label{coenergy}
     \end{table}
 
@@ -313,6 +315,9 @@
 \section{Conclusion}
 Electro-mechanical systems that use magnetism as the energy transfer medium are difficult to analyse accurately with analytical methods. This is evident from the mathematics that described the force calculation in the analytical cases. As such a numerical tool such as FEMM is preferable, especially when the geometry of the problem is more complex than the actuator in Fig. \ref{xsection}. The different methods of calculation proved to show broadly similar trends except for the extreme armature displacements: saturation became a prominent force when closed and fringing approximations became inaccurate when open. The time taken to perform this analysis was greatly reduced with a linear approximation: the non-linear method embedded in FEMM uses an iterative Newton-Raphson method which is computationally intensive. The context of the problem is therefore important to consider when using this or similar tools: settling for lower accuracy but faster calculation in certain situations might be a sensible choice, however a strong understanding of the underlying concepts is required to confidently make this decision.
 
+There are, however, flaws in this method of characterising the actuator. As discussed in Section \ref{windRes}, the winding resistance calculated in FEMM does not account for end windings due to the 2D planar problem definition. This definition leads to a further limitation: the model cannot account for flux going 'into' or coming 'out of' the page which will have a significant impact on the airgap flux path. As the analysis is performed in a series of magneto-static cases, the model also cannot account for eddy currents induced through the relative motion of the core and armature.
+
+Reluctance actuators such as the one modelled would generally be implemented with a retaining and mechanical returning mechanism for the armature. The actuator can then be used to generate high force vibrations, or in low friction compressors \cite{menerouddesign} for use in hydrogen propellant management in aerospace applications.
 
 \printbibliography
 

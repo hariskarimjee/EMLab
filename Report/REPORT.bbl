@@ -63,6 +63,62 @@
       \field{title}{Electromagnetic Characterisation of a Short-Stroke Ferromagnetic Actuator: Part B}
       \field{year}{2020}
     \endentry
+    \entry{menerouddesign}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=533b79d731c4be2cd65b7587fc12f089}{%
+           family={Meneroud},
+           familyi={M\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c76de03e82a924f04f8f9b80b5fe23ef}{%
+           family={Meylan},
+           familyi={M\bibinitperiod},
+           given={France},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4aadab1bb0297c5cfa7a0a19a236e922}{%
+           family={Nil},
+           familyi={N\bibinitperiod},
+           given={Celen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4ade02447d4b012ff96b1c57c5bdc9a3}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1973722161d72e8e68bfb038568c41f7}{%
+           family={Isselhorst},
+           familyi={I\bibinitperiod},
+           given={Armin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d458f19e557d65f85a9a38d91d0e3f45}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a1c9e128d81a9085ba4c790910af8886}{%
+           family={Aigouy},
+           familyi={A\bibinitperiod},
+           given={G{é}rald},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cb591353633f2d81d05befe7333f1119}{%
+           family={Branco},
+           familyi={B\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe5d2cee8bc11cc35c64e77f39bf3158}
+      \strng{fullhash}{8902e1aab9689480467ed98a86bc5aee}
+      \strng{bibnamehash}{8902e1aab9689480467ed98a86bc5aee}
+      \strng{authorbibnamehash}{8902e1aab9689480467ed98a86bc5aee}
+      \strng{authornamehash}{fe5d2cee8bc11cc35c64e77f39bf3158}
+      \strng{authorfullhash}{8902e1aab9689480467ed98a86bc5aee}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.cedrat-technologies.com/fileadmin/user_upload/CTEC/Publications/Publications/2019/Design_of_EM_compressor_Cedrat_Technologies_ISEF219_Article.pdf}}
+      \field{title}{Design of a 2 stages compressor for mobility applications, using compact and efficient Moving Iron Controllable Actuators}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
