@@ -19,7 +19,7 @@ blockProps = {'core_linear' 1 0 '<None>' 0 1 0;
               'copper' 1 0 'winding_2' 0 6 -100;
               'air' 1 0 '<None>' 0 7 0};
 
-
+%set analysis parameters
 steps = 50;
 armaturePosition = 0.0;
 minPos = 0.0;
@@ -36,12 +36,14 @@ for p = 1:steps
     mi_purgemesh();
     mi_createmesh();
     set_linear(blockCoords, blockProps);
+    %get analytical and linear inductance characteristic
     for i = 0:1:10
         mi_setcurrent('winding_1', i);
         mi_setcurrent('winding_2', i);
         L(p, 1:4, i+1) = linear_inductances(armaturePosition);
     end
     set_nonlinear(blockCoords, blockProps);
+    %get nonlinear inductance characteristic
     for i  = 0:1:10
         mi_setcurrent('winding_1', i);
         mi_setcurrent('winding_2', i);
