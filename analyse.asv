@@ -60,10 +60,10 @@ function move_armature(dx, armPos, maxPos)
     end
 end
 
-%calculates inductances for both analytical cases and numerical linear case.
+%calculates inductances for both analytical cases and numerical linear case
+.
 function linInd = linear_inductances(armPos)
     g = 5 + armPos;
-    %calculate reluctances
     Rcore = (134.5e-3)/(4e-7 * pi * 1000 * 400e-6);
     Rair = (0.5e-3)/(4e-7 * pi * 400e-6);
     Rarmature = ((70 - g)*10^-3)/(4e-7 * pi * 1000 * 400e-6);
@@ -72,9 +72,7 @@ function linInd = linear_inductances(armPos)
     Rairfringe = (0.5e-3)/(4e-7 * pi * (20e-3 + 2*0.5e-3)^2);
     Rairvariablefringe = (g*10^-3)/(4e-7 * pi * (20e-3 + 2*g*10^-3)^2);
     Rtotfringe = Rcore + Rairfringe + Rarmature + Rairvariablefringe;
-    %calculate analytical inductance, no fringing
     Lanalytical = (100^2)/Rtot;
-    %calculate analytical inductance, fringing
     Lanalyticalfringe = (100^2)/Rtotfringe;
     mi_saveas('linear.fem');
     mi_analyze();
@@ -82,24 +80,21 @@ function linInd = linear_inductances(armPos)
     CP = mo_getcircuitproperties('winding_1');
     Lnumericallinear = CP(3)/CP(1);
     % Inductance values doubled as they are based off of the half
-    % circuit. Output array of calculated inductances.
+    % circuit
     linInd = [armPos 2*Lanalytical ...
                          2*Lanalyticalfringe 2*Lnumericallinear];
 end
 
-%calculates inductance for non-linear core material.
 function [nonLinInd, Ec] = nonlinear_inductances()
     mi_saveas('nonlinear.fem');
     mi_analyze();
     mi_loadsolution();
     CP = mo_getcircuitproperties('winding_1');
     mo_groupselectblock();
-    %extract co-energy from FEMM
     Ec = mo_blockintegral(17);
     nonLinInd = 2*CP(3)/CP(1);
 end
 
-%sets core material to linear
 function set_linear(blockCoords, blockProps)
     for i = 1:2
         mi_selectlabel(blockCoords(i,1), blockCoords(i,2));
@@ -111,7 +106,6 @@ function set_linear(blockCoords, blockProps)
     end
 end
 
-%sets core material to non-linear
 function set_nonlinear(blockCoords, blockProps)
     for i = 1:2
         mi_selectlabel(blockCoords(i,1), blockCoords(i,2));

@@ -92,7 +92,6 @@ hold off
 
 subplot(2,2,4)
 hold on
-%plot psi-I characteristic for the numerical non-linear case
 for i = 1:6:49
     x = 0:1:10;
     y = [];
@@ -117,7 +116,6 @@ movegui([2, -510])
 
 figure('Name', 'Force-Displacement')
 hold on
-%calculate coenergy for each armature position
 linetypes = [":", "--", "-", "-."]; 
 for count = 1:1:4
     for i = 1:1:50
@@ -130,18 +128,16 @@ for count = 1:1:4
                 y(j) = 0;
             end
         end
-       
         CoEnergy(count,i) = trapz(x, y);
     end
 end
-%calculate and plot force-displacement characteristic for the four cases
 for n = 1:1:4
    for i = 1:1:49
       F(i,n) = (CoEnergy(n,i+1) - CoEnergy(n,i))/((4.9e-3)/49); 
    end
    plot(linspace(-4.9,0,49),flip(F(:,n)),linetypes(n));
 end
-%calculate force from the co-energy extracted directly from FEMM
+
 for i = 1:1:49
     Ff(i) = (Ec(i+1) - Ec(i))/((4.9e-3)/49); 
 end
@@ -162,8 +158,7 @@ ylabel('Force [N]');
 legend('Numerical (non-linear)', 'Extracted from FEMM')
 hold off
 movegui([590 -510])
-%generate values for table comparing co-energy between trapz() and
-%blockintegral
+
 Cotable = zeros(2,50);
 Cotable(1,:) = round(CoEnergy(4,:), 6, 'significant');
 Cotable(2,:) = round(Ec, 6, 'significant');

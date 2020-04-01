@@ -1,4 +1,4 @@
-% CI ACTUATOR FEMM ANALYSIS PROGRAM
+`% CI ACTUATOR FEMM ANALYSIS PROGRAM
 
 % show matlab where femm files are and setup
 addpath(genpath('C:\femm42'));
